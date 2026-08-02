@@ -25,7 +25,6 @@ export default function Footer() {
             <h3>Connect</h3>
             <ul>
               <li><a href="https://www.linkedin.com/in/james-marime/" target="_blank" rel="noreferrer">James on LinkedIn</a></li>
-              <li><a href="https://www.youtube.com/@BecomingSessions" target="_blank" rel="noreferrer">The Becoming Sessions</a></li>
               <li><a href="mailto:info@marimetechsolutions.com">info@marimetechsolutions.com</a></li>
             </ul>
           </div>
