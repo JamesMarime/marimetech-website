@@ -4,7 +4,7 @@ import { CheckCircle2, ShieldCheck, UsersRound } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description: 'Learn about MarimeTech Solutions, our approach and our leadership.'
+  description: 'Learn about MarimeTech Solutions Inc., our approach and our leadership.'
 };
 
 export default function AboutPage() {
@@ -12,8 +12,8 @@ export default function AboutPage() {
     <main id="main">
       <section className="pageHero">
         <div className="container">
-          <p className="eyebrow">About MarimeTech</p>
-          <h1>Business-first technology built for meaningful change.</h1>
+          <p className="eyebrow">About Us</p>
+          <h1>About MarimeTech Solutions Inc.</h1>
           <p>
             MarimeTech Solutions Inc. helps organizations identify and remove business
             bottlenecks through secure technology transformation.

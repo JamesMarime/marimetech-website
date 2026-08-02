@@ -140,3 +140,9 @@ Upload all extracted files to the existing GitHub repository and commit. Netlify
 - Preserved the simplified homepage capability graphic
 - Retained static sitemap compatibility for Netlify
 - Pinned framework and dependency versions for repeatable builds
+
+
+## Final approved brand changes
+- Added M + MarimeTech Solutions Inc. text lockup in header and footer
+- Updated About page hero to About MarimeTech Solutions Inc.
+- Retained the user's existing photo and Founder & CEO title
