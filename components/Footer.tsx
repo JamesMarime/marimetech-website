@@ -10,7 +10,7 @@ export default function Footer() {
         </div>
         <div>
           <h3>Quick links</h3>
-          <ul><li><Link href="/">Home</Link></li><li><Link href="/launch-your-business">Launch Your Business</Link></li><li><Link href="/services">Solutions</Link></li><li><Link href="/founder">Founder</Link></li><li><Link href="/insights">Insights</Link></li></ul>
+          <ul><li><Link href="/">Home</Link></li><li><Link href="/launch-your-business">Launch Your Business</Link></li><li><Link href="/services">Solutions</Link></li><li><Link href="/about">About Us</Link></li><li><Link href="/insights">Insights</Link></li></ul>
         </div>
         <div>
           <h3>Let&apos;s connect</h3>

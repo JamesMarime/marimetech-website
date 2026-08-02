@@ -28,7 +28,7 @@ export default function KitSignupForm() {
         target="kit-submission-frame"
         onSubmit={handleSubmit}
       >
-        <label htmlFor="blueprint-email">Business email address</label>
+        <label htmlFor="blueprint-email">Email address</label>
         <div className="kitFormRow">
           <input
             id="blueprint-email"
@@ -36,7 +36,7 @@ export default function KitSignupForm() {
             type="email"
             required
             autoComplete="email"
-            placeholder="you@yourcompany.com"
+            placeholder="you@example.com"
           />
           <button className="btn btnPrimary kitSubmit" type="submit">Get My Free Blueprint Now</button>
         </div>

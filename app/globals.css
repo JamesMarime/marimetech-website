@@ -803,3 +803,61 @@ textarea { min-height: 170px; resize: vertical; }
   .compactFooterGrid { grid-template-columns:1fr; }
   .compactFooterGrid > :first-child { grid-column:auto; }
 }
+
+
+/* Approved v2.0 refinements */
+.markOnlyLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  padding: 6px;
+}
+.markOnlyLogo {
+  width: 104px;
+  height: 88px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 0;
+}
+.footerMark {
+  width: 92px;
+  height: 92px;
+  object-fit: contain;
+  object-position: center;
+}
+.orbitCore img {
+  width: 72%;
+  height: 72%;
+  object-fit: contain;
+}
+.leadershipSection {
+  background: #03172d;
+  color: white;
+}
+.leadershipSection .sectionIntro h2 {
+  color: white;
+}
+.leadershipCard {
+  border: 1px solid rgba(255,255,255,.14);
+}
+
+@media (max-width: 1080px) {
+  .markOnlyLogo {
+    width: 88px;
+    height: 74px;
+  }
+}
+@media (max-width: 700px) {
+  .markOnlyLink {
+    padding: 5px;
+  }
+  .markOnlyLogo {
+    width: 72px;
+    height: 62px;
+  }
+  .footerMark {
+    width: 78px;
+    height: 78px;
+  }
+}

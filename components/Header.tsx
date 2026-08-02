@@ -8,7 +8,7 @@ const links = [
   ['/', 'Home'],
   ['/launch-your-business', 'Launch Your Business'],
   ['/services', 'Solutions'],
-  ['/founder', 'Founder'],
+  ['/about', 'About Us'],
   ['/insights', 'Insights'],
   ['/contact', 'Contact'],
 ];

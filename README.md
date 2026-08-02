@@ -127,3 +127,16 @@ Upload all extracted files to the existing GitHub repository and commit. Netlify
 
 ## Static sitemap fix
 - Added `export const dynamic = "force-static";` to `app/sitemap.ts` for compatibility with Next.js static export.
+
+
+## MarimeTech Website v2.0 — Approved Release
+
+- Rebuilt the standalone M logo with proper padding to prevent clipping
+- Updated navigation from Founder to About Us
+- Merged leadership content into the scalable About Us page
+- Removed the old Founder route and sitemap entry
+- Changed the Kit form label to Email address
+- Changed the email placeholder to you@example.com
+- Preserved the simplified homepage capability graphic
+- Retained static sitemap compatibility for Netlify
+- Pinned framework and dependency versions for repeatable builds
