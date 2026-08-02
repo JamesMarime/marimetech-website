@@ -18,9 +18,8 @@ export default function Header() {
       <a className="skip" href="#main">Skip to content</a>
       <header className="header">
         <div className="container navbar">
-          <Link href="/" className="brand" aria-label="MarimeTech Solutions home">
-            <span className="brandMark">M</span>
-            <span className="brandText">MARIMETECH <small>SOLUTIONS INC.</small></span>
+          <Link href="/" className="brand brandLogoLink" aria-label="MarimeTech Solutions home">
+            <img className="headerLogo" src="/marimetech-header-logo.png" alt="MarimeTech Solutions Inc." />
           </Link>
           <button className="navToggle" aria-expanded={open} aria-label="Toggle navigation" onClick={() => setOpen(!open)}>
             <span></span><span></span><span></span>

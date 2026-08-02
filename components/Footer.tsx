@@ -6,9 +6,8 @@ export default function Footer() {
       <div className="container">
         <div className="footerGrid">
           <div>
-            <Link href="/" className="brand">
-              <span className="brandMark">M</span>
-              <span className="brandText">MARIMETECH <small>SOLUTIONS INC.</small></span>
+            <Link href="/" className="brand brandLogoLink">
+              <img className="footerLogo" src="/marimetech-header-logo.png" alt="MarimeTech Solutions Inc." />
             </Link>
             <p style={{maxWidth:520, marginTop:18}}>Helping organizations remove bottlenecks, modernize technology, strengthen security and scale with confidence.</p>
           </div>

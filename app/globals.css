@@ -359,3 +359,59 @@ textarea { min-height: 170px; resize: vertical; }
   .outcomeFlow > div { grid-template-columns: 38px 1fr; }
   .outcomeFlow small { grid-column: 2; }
 }
+
+
+/* Premium MarimeTech logo update */
+.brandLogoLink { min-width: 0; }
+.headerLogo {
+  display: block;
+  width: 220px;
+  height: 58px;
+  object-fit: cover;
+  object-position: center 49%;
+  border-radius: 8px;
+}
+.footerLogo {
+  display: block;
+  width: min(330px, 100%);
+  height: auto;
+  border-radius: 12px;
+}
+.heroBrandWrap {
+  position: relative;
+  min-height: 580px;
+  display: grid;
+  place-items: center;
+}
+.heroBrandPanel {
+  width: min(100%, 620px);
+  border: 1px solid rgba(239,185,82,.28);
+  border-radius: 32px;
+  overflow: hidden;
+  background: #061a31;
+  box-shadow: 0 28px 90px rgba(0,0,0,.32);
+  transform: perspective(1200px) rotateY(-3deg);
+}
+.heroBrandPanel img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.heroBrandWrap .heroMetricTop { top: 62px; right: -12px; }
+.heroBrandWrap .heroMetricBottom { bottom: 58px; left: -20px; }
+
+@media (max-width: 980px) {
+  .headerLogo { width: 195px; height: 52px; }
+  .heroBrandWrap { min-height: 510px; }
+  .heroBrandPanel { width: min(100%, 590px); transform: none; }
+}
+@media (max-width: 640px) {
+  .headerLogo { width: 175px; height: 48px; }
+  .heroBrandWrap { min-height: 390px; display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-start; }
+  .heroBrandPanel { border-radius: 22px; width: 100%; }
+  .heroBrandWrap .heroMetricTop,
+  .heroBrandWrap .heroMetricBottom {
+    position: static;
+    width: calc(50% - 7px);
+  }
+}

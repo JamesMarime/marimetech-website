@@ -24,13 +24,9 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="heroPortraitWrap" aria-label="James Marime, Founder and CEO of MarimeTech Solutions">
-            <div className="heroPortraitFrame">
-              <div className="heroPortrait" />
-              <div className="heroPortraitBadge">
-                <span className="heroBadgeMark">M</span>
-                <span><strong>MarimeTech Solutions</strong><small>Transforming today. Empowering tomorrow.</small></span>
-              </div>
+          <div className="heroBrandWrap" aria-label="MarimeTech Solutions brand">
+            <div className="heroBrandPanel">
+              <img src="/marimetech-premium-logo.jpg" alt="MarimeTech Solutions Inc. — Leverage. Technology. Transform. Grow." />
             </div>
             <div className="heroMetric heroMetricTop"><strong>15+ years</strong><span>Technology leadership</span></div>
             <div className="heroMetric heroMetricBottom"><strong>Business-first</strong><span>Strategy through delivery</span></div>

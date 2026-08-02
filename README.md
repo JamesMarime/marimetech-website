@@ -84,3 +84,13 @@ In Netlify:
 - Add the first three insight articles.
 - Contact mailbox confirmed: info@marimetechsolutions.com.
 - Add a booking link if using Calendly or Microsoft Bookings.
+
+
+## Premium logo update
+
+This package adds:
+- Premium MarimeTech logo to the header and footer
+- Full brand visual on the homepage
+- MarimeTech favicon and Apple touch icon
+- Updated social-sharing image
+- Founder photograph removed from the homepage; it remains on the Founder page only
