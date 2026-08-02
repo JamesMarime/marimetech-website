@@ -94,3 +94,14 @@ This package adds:
 - MarimeTech favicon and Apple touch icon
 - Updated social-sharing image
 - Founder photograph removed from the homepage; it remains on the Founder page only
+
+
+## Reference-inspired homepage redesign
+
+This version:
+- Rebuilds the homepage around the approved mobile visual direction
+- Uses the full MarimeTech logo in the header without cropping
+- Adds a bold navy-and-gold hero with abstract technology network detail
+- Adds the four-part credibility strip
+- Adds a focused "Who We Help" section
+- Remains responsive across desktop, tablet and mobile
