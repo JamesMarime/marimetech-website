@@ -1,13 +1,14 @@
 import type { MetadataRoute } from 'next';
 
-export const dynamic = 'force-static';
-
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = 'https://marimetechsolutions.com';
-  return ['', '/about', '/services', '/founder', '/contact'].map((path) => ({
-    url: `${base}${path}`,
-    lastModified: new Date('2026-08-01'),
-    changeFrequency: 'monthly',
-    priority: path === '' ? 1 : 0.7,
-  }));
+  return [
+    { url: base, priority: 1 },
+    { url: `${base}/launch-your-business/`, priority: .95 },
+    { url: `${base}/services/`, priority: .85 },
+    { url: `${base}/about/`, priority: .7 },
+    { url: `${base}/founder/`, priority: .75 },
+    { url: `${base}/insights/`, priority: .7 },
+    { url: `${base}/contact/`, priority: .9 },
+  ];
 }

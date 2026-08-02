@@ -2,168 +2,129 @@ import Link from 'next/link';
 import {
   ArrowRight,
   BarChart3,
-  BrainCircuit,
   CalendarDays,
   CheckCircle2,
+  Cloud,
   Focus,
+  Gauge,
+  LockKeyhole,
+  Rocket,
   ShieldCheck,
+  Target,
   UsersRound,
   Workflow
 } from 'lucide-react';
-import ServiceCard from '@/components/ServiceCard';
+
+const capabilityLabels = [
+  { label: 'Strategy', icon: <Target />, position: 'capStrategy' },
+  { label: 'Operations', icon: <Workflow />, position: 'capOperations' },
+  { label: 'Security', icon: <LockKeyhole />, position: 'capSecurity' },
+  { label: 'Transformation', icon: <Cloud />, position: 'capTransformation' },
+  { label: 'Data & AI', icon: <BarChart3 />, position: 'capData' },
+  { label: 'Growth', icon: <UsersRound />, position: 'capGrowth' },
+];
 
 export default function Home() {
   return (
     <main id="main">
-      <section className="hero launchHero">
-        <div className="launchNetwork" aria-hidden="true">
-          <span className="networkOrb networkOrbOne" />
-          <span className="networkOrb networkOrbTwo" />
-          <span className="networkOrb networkOrbThree" />
-          <span className="networkOrb networkOrbFour" />
-          <span className="networkLine networkLineOne" />
-          <span className="networkLine networkLineTwo" />
-          <span className="networkLine networkLineThree" />
-          <span className="networkLine networkLineFour" />
-        </div>
-
-        <div className="container launchHeroInner">
-          <div className="launchHeroCopy">
-            <p className="eyebrow launchEyebrow">Technology strategy · Transformation · Executive advisory</p>
-            <h1>
-              Leverage.<br />
-              Technology.<br />
-              <span className="gold">Transform.<br />Grow.</span>
-            </h1>
-            <div className="launchRule" />
-            <p className="lead">
-              We help growing organizations remove operational bottlenecks through
-              <strong> technology, AI</strong> and transformation.
+      <section className="hero premiumHero">
+        <div className="container premiumHeroGrid">
+          <div className="premiumHeroCopy">
+            <p className="eyebrow heroDescriptor">Technology strategy · Transformation · Executive advisory</p>
+            <h1>Leverage.<br/>Technology.<br/><span className="gold">Transform.<br/>Grow.</span></h1>
+            <div className="heroGoldRule" />
+            <p className="lead heroStatement">
+              Helping organizations identify and remove business bottlenecks through <strong>secure</strong> technology transformation.
             </p>
-            <div className="actions launchActions">
-              <Link className="btn btnPrimary launchPrimary" href="/contact">
-                <CalendarDays size={19}/> Book a strategy call
-              </Link>
-              <Link className="btn btnGhost launchSecondary" href="/services">
-                Explore our services <ArrowRight size={18}/>
-              </Link>
+            <div className="actions premiumHeroActions">
+              <Link className="btn btnPrimary" href="/contact"><CalendarDays size={18}/> Book a conversation</Link>
+              <Link className="btn btnOutlineGold" href="/services">Explore our solutions <ArrowRight size={18}/></Link>
             </div>
+          </div>
+
+          <div className="capabilityOrbit" aria-label="MarimeTech capabilities: strategy, operations, security, transformation, data and AI, and growth">
+            <div className="orbitRing ringOne" />
+            <div className="orbitRing ringTwo" />
+            <div className="orbitRing ringThree" />
+            <div className="orbitCore"><img src="/marimetech-icon.png" alt="" /></div>
+            {capabilityLabels.map(item => (
+              <div key={item.label} className={`capabilityLabel ${item.position}`}>
+                <span className="capabilityIcon">{item.icon}</span>
+                <strong>{item.label}</strong>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      <section className="credibilityBar">
+      <section className="credibilityBar premiumCredibility">
         <div className="container credibilityGrid">
-          <div className="credibilityItem">
-            <ShieldCheck />
-            <strong>15+</strong>
-            <span>Years of experience</span>
-          </div>
-          <div className="credibilityItem">
-            <UsersRound />
-            <strong>Enterprise experience</strong>
-            <span>Across industries</span>
-          </div>
-          <div className="credibilityItem">
-            <Focus />
-            <strong>Focused on results</strong>
-            <span>Not just projects</span>
-          </div>
-          <div className="credibilityItem">
-            <BarChart3 />
-            <strong>Transform. Grow. Scale.</strong>
-            <span>Built for what comes next</span>
-          </div>
+          <div className="credibilityItem"><ShieldCheck/><strong>15+</strong><span>Years of experience</span></div>
+          <div className="credibilityItem"><UsersRound/><strong>Enterprise experience</strong><span>Across industries</span></div>
+          <div className="credibilityItem"><Focus/><strong>Focused on results</strong><span>Not just projects</span></div>
+          <div className="credibilityItem"><Gauge/><strong>Transform. Grow. Scale.</strong><span>Built for what comes next</span></div>
         </div>
       </section>
 
-      <section className="section whoWeHelp">
-        <div className="container whoGrid">
-          <div>
-            <p className="eyebrow">Who we help</p>
-            <h2>Organizations with complex challenges.</h2>
-          </div>
-          <div>
-            <p className="lead muted">
-              We partner with founders, executives and operational leaders who are ready
-              to remove bottlenecks, strengthen their technology foundation and unlock growth.
-            </p>
-            <ul className="checks">
-              <li>Growing organizations facing operational friction</li>
-              <li>Leaders modernizing systems, cloud or infrastructure</li>
-              <li>Teams introducing AI with clear governance and purpose</li>
-              <li>Businesses needing experienced technology leadership</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section className="section soft">
+      <section className="section approachSection">
         <div className="container">
-          <p className="eyebrow">What we do</p>
-          <h2>Clarity before complexity.</h2>
-          <p className="lead muted" style={{maxWidth:780}}>
-            We connect business priorities, operating realities and technology decisions
-            so leaders can invest with confidence and deliver change that lasts.
-          </p>
-          <div className="grid3" style={{marginTop:42}}>
-            <ServiceCard icon={<BrainCircuit/>} title="Technology & AI Strategy">
-              Practical roadmaps that connect business priorities to the right technology,
-              operating model and investment sequence.
-            </ServiceCard>
-            <ServiceCard icon={<Workflow/>} title="Digital Transformation">
-              Modernization of cloud, infrastructure, systems, workflows and service delivery
-              with disciplined execution.
-            </ServiceCard>
-            <ServiceCard icon={<ShieldCheck/>} title="Security & Executive Advisory">
-              Cybersecurity, governance, vendor oversight and trusted leadership support for
-              high-impact decisions.
-            </ServiceCard>
+          <div className="centerHeading">
+            <p className="eyebrow">Our approach</p>
+            <h2>How We Work</h2>
+          </div>
+          <div className="approachGrid">
+            <article className="approachItem">
+              <span className="approachIcon"><UsersRound/></span>
+              <h3>Business First</h3>
+              <p>We start with your business goals, identify what is slowing you down, and deliver technology that creates measurable value.</p>
+            </article>
+            <article className="approachItem">
+              <span className="approachIcon"><ShieldCheck/></span>
+              <h3>Secure by Design</h3>
+              <p>Security is built into every solution from the start—not added as an afterthought.</p>
+            </article>
+            <article className="approachItem">
+              <span className="approachIcon"><CheckCircle2/></span>
+              <h3>Built for Resilience</h3>
+              <p>We design technology that is reliable, scalable, and ready to support your business as it grows and changes.</p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section className="section">
-        <div className="container split">
-          <div className="outcomePanel">
-            <p className="eyebrow">The MarimeTech approach</p>
-            <h3>Start with the business constraint.</h3>
-            <div className="outcomeFlow">
-              <div><span>01</span><strong>Diagnose</strong><small>What is actually slowing performance?</small></div>
-              <div><span>02</span><strong>Prioritize</strong><small>What should change first—and why?</small></div>
-              <div><span>03</span><strong>Deliver</strong><small>How do we make the improvement stick?</small></div>
-            </div>
-            <div className="outcomeQuote">“Technology is valuable only when it makes the organization work better.”</div>
+      <section className="section solutionPreviewSection">
+        <div className="container">
+          <div className="centerHeading lightHeading">
+            <p className="eyebrow">What we do</p>
+            <h2>Solutions That Drive Results</h2>
           </div>
-          <div>
-            <p className="eyebrow">Why MarimeTech</p>
-            <h2>Technology should make the business work better.</h2>
-            <p className="lead muted">
-              Too many organizations buy tools before defining the real problem.
-              We start with the business bottleneck, then build the solution around
-              people, process, risk and technology.
-            </p>
-            <ul className="checks">
-              <li>Independent, vendor-neutral advice</li>
-              <li>Experience across cloud, infrastructure, cybersecurity and enterprise programs</li>
-              <li>Practical solutions for growing organizations</li>
-              <li>Clear communication from boardroom strategy to implementation detail</li>
-            </ul>
+          <div className="solutionPreviewGrid">
+            <article className="solutionPreviewCard">
+              <Rocket/><h3>Launch</h3>
+              <p>Build a professional online presence that inspires confidence from day one.</p>
+              <Link href="/launch-your-business">Learn more <ArrowRight size={16}/></Link>
+            </article>
+            <article className="solutionPreviewCard">
+              <Workflow/><h3>Transform</h3>
+              <p>Modernize systems and processes to remove bottlenecks and improve efficiency.</p>
+              <Link href="/services">Learn more <ArrowRight size={16}/></Link>
+            </article>
+            <article className="solutionPreviewCard">
+              <ShieldCheck/><h3>Secure</h3>
+              <p>Strengthen your security posture and protect what matters most.</p>
+              <Link href="/services">Learn more <ArrowRight size={16}/></Link>
+            </article>
           </div>
         </div>
       </section>
 
-      <section className="section">
-        <div className="container band">
+      <section className="conversationCta">
+        <div className="container conversationCtaInner">
           <div>
-            <p className="eyebrow">Ready to move forward?</p>
-            <h2 style={{marginBottom:12}}>Let us identify what is holding your organization back.</h2>
-            <p>
-              A focused conversation can reveal whether the real issue is strategy,
-              process, capability, technology, security or execution.
-            </p>
+            <h2>Ready to move your business forward?</h2>
+            <p>Let&apos;s start with a conversation about your goals, your challenges, and the technology that can help remove the bottlenecks holding you back.</p>
           </div>
-          <Link className="btn btnPrimary" href="/contact">Book a conversation</Link>
+          <Link className="btn btnPrimary" href="/contact"><CalendarDays size={18}/> Book a conversation</Link>
         </div>
       </section>
     </main>

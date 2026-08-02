@@ -105,3 +105,17 @@ This version:
 - Adds the four-part credibility strip
 - Adds a focused "Who We Help" section
 - Remains responsive across desktop, tablet and mobile
+
+## MarimeTech v2 deployment update
+
+This release includes:
+- Large standalone M mark in the header
+- Premium full-width homepage hero with simplified capability labels
+- Business First, Secure by Design, and Built for Resilience approach section
+- Three focused solution pathways: Launch, Transform, Secure
+- New Launch Your Business landing page
+- Kit form connected to form 9756226
+- New Insights placeholder page
+- Updated navigation, footer, and sitemap
+
+Upload all extracted files to the existing GitHub repository and commit. Netlify will deploy automatically.

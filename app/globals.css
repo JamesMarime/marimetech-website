@@ -652,3 +652,154 @@ textarea { min-height: 170px; resize: vertical; }
   .credibilityItem:first-child strong { font-size: 1.75rem; }
   .credibilityItem span { font-size: .69rem; }
 }
+
+/* MarimeTech v2 — premium homepage and Business Launch funnel */
+.premiumHeader { background: rgba(2,17,34,.97); }
+.premiumNavbar { min-height: 104px; }
+.markOnlyLink { flex: 0 0 auto; }
+.markOnlyLogo { width: 94px; height: 82px; object-fit: contain; display: block; }
+.premiumNavLinks { gap: 28px; }
+.btnOutlineGold { color: white; border-color: var(--gold); background: transparent; border-radius: 7px; }
+.btnOutlineGold:hover { color: var(--navy); background: var(--gold); }
+.navCta { min-height: 48px; padding-inline: 20px; }
+
+.premiumHero {
+  min-height: 620px;
+  background: linear-gradient(125deg,#021326 0%,#041c36 52%,#052947 100%);
+}
+.premiumHero::after { display: none; }
+.premiumHeroGrid { display: grid; grid-template-columns: .92fr 1.08fr; gap: 48px; align-items: center; padding: 52px 0 48px; position: relative; z-index: 2; }
+.premiumHeroCopy h1 { font-size: clamp(3.3rem,5.6vw,5.6rem); text-transform: uppercase; line-height: .98; margin-bottom: 18px; }
+.heroDescriptor { font-size: .67rem; margin-bottom: 16px; }
+.heroGoldRule { width: 52px; height: 3px; background: var(--gold); margin: 18px 0; }
+.heroStatement { max-width: 580px; font-size: clamp(1rem,1.4vw,1.15rem); color: #dbe5ee; }
+.heroStatement strong { color: var(--gold); }
+.premiumHeroActions { margin-top: 28px; }
+.premiumHeroActions .btn { border-radius: 6px; min-height: 52px; }
+
+.capabilityOrbit { position: relative; width: min(100%,620px); aspect-ratio: 1.2; margin-inline: auto; }
+.orbitRing { position: absolute; border-radius: 50%; border: 1px solid rgba(27,144,221,.34); left: 50%; top: 50%; transform: translate(-50%,-50%); }
+.ringOne { width: 44%; aspect-ratio: 1; box-shadow: 0 0 30px rgba(0,149,230,.15); }
+.ringTwo { width: 57%; aspect-ratio: 1; border-style: dashed; }
+.ringThree { width: 70%; aspect-ratio: 1; opacity: .62; }
+.orbitCore { position: absolute; left:50%; top:50%; transform:translate(-50%,-50%); width: 29%; aspect-ratio:1; border-radius:50%; display:grid; place-items:center; background:radial-gradient(circle,#0a3155,#03182e 72%); border:1px solid rgba(52,177,247,.65); box-shadow:0 0 42px rgba(0,149,230,.22); }
+.orbitCore img { width: 66%; height:66%; object-fit:contain; }
+.capabilityLabel { position:absolute; display:flex; align-items:center; gap:10px; color:white; text-transform:uppercase; font-size:.78rem; letter-spacing:.02em; white-space:nowrap; }
+.capabilityIcon { width:52px; height:52px; border-radius:50%; display:grid; place-items:center; color:var(--gold); border:1px solid rgba(255,255,255,.32); background:#06213d; }
+.capabilityIcon svg { width:25px; height:25px; }
+.capStrategy { left:6%; top:10%; }
+.capOperations { left:0; top:41%; }
+.capSecurity { left:5%; bottom:8%; }
+.capTransformation { right:0; top:10%; }
+.capData { right:-1%; top:41%; }
+.capGrowth { right:3%; bottom:8%; }
+
+.premiumCredibility .credibilityItem { min-height: 144px; padding: 24px 18px; }
+.premiumCredibility .credibilityItem svg { width:34px; height:34px; margin-bottom:10px; }
+.premiumCredibility .credibilityItem strong { font-size: .98rem; }
+.premiumCredibility .credibilityItem:first-child strong { font-size:1.75rem; }
+
+.approachSection { background:#f7f7f5; padding:72px 0; }
+.centerHeading { text-align:center; margin-bottom:38px; }
+.centerHeading h2 { font-size: clamp(2rem,3.4vw,3.2rem); margin-bottom:0; }
+.approachGrid { display:grid; grid-template-columns:repeat(3,1fr); }
+.approachItem { text-align:center; padding:12px 42px; border-right:1px solid #d7dce1; }
+.approachItem:last-child { border-right:0; }
+.approachIcon { width:64px; height:64px; border-radius:50%; display:grid; place-items:center; margin:0 auto 18px; color:var(--gold-2); border:1px solid #d8dde2; }
+.approachItem p { color:#475568; font-size:.95rem; }
+
+.solutionPreviewSection { background:#03172d; color:white; padding:72px 0; }
+.lightHeading h2 { color:white; }
+.solutionPreviewGrid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+.solutionPreviewCard { border:1px solid rgba(255,255,255,.18); border-radius:10px; padding:32px; text-align:center; background:linear-gradient(180deg,rgba(255,255,255,.035),rgba(255,255,255,.012)); }
+.solutionPreviewCard > svg { color:var(--gold); width:40px; height:40px; margin-bottom:12px; }
+.solutionPreviewCard p { color:#c8d3de; min-height:76px; }
+.solutionPreviewCard a { display:inline-flex; gap:7px; align-items:center; color:var(--gold); font-weight:800; }
+
+.conversationCta { background:linear-gradient(120deg,#06213d,#0a3158); color:white; border-top:1px solid rgba(255,255,255,.1); }
+.conversationCtaInner { min-height:170px; display:flex; align-items:center; justify-content:space-between; gap:42px; padding-block:32px; }
+.conversationCta h2 { font-size:clamp(1.7rem,2.8vw,2.6rem); margin-bottom:8px; }
+.conversationCta p { color:#ccd8e3; margin:0; max-width:760px; }
+
+.premiumFooter { padding-top:48px; }
+.compactFooterGrid { grid-template-columns:1.2fr .7fr .9fr; }
+.footerMark { width:82px; height:82px; object-fit:contain; }
+.footerStatement { max-width:360px; color:#c6d1dc; }
+
+.launchPageHero { padding:100px 0 82px; }
+.launchHeroLayout { display:grid; grid-template-columns:1.2fr .8fr; align-items:center; gap:72px; }
+.launchPromise { padding:38px; border-left:3px solid var(--gold); background:rgba(255,255,255,.05); }
+.launchPromise strong,.launchPromise span { display:block; }
+.launchPromise strong { color:white; font-size:1.5rem; }
+.launchPromise span { color:var(--gold); font-size:1.15rem; margin-top:6px; }
+.sectionIntro { max-width:820px; margin-bottom:42px; }
+.launchIncludedGrid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+.launchIncludedCard { border:1px solid var(--line); border-radius:18px; padding:25px; background:white; }
+.launchIncludedCard > span { color:var(--gold-2); }
+.launchIncludedCard svg { width:30px; height:30px; }
+.launchIncludedCard h3 { margin:12px 0 8px; }
+.launchIncludedCard p { color:var(--muted); font-size:.94rem; margin-bottom:0; }
+.launchProcessSection { background:#03172d; color:white; }
+.launchProcess { display:grid; grid-template-columns:repeat(5,1fr); gap:12px; }
+.launchStep { border-top:2px solid var(--gold); padding:20px 12px; text-align:center; background:rgba(255,255,255,.035); }
+.launchStep span { display:block; color:var(--gold); font-weight:900; margin-bottom:6px; }
+.blueprintSection { background:#f4f7fb; }
+.blueprintGrid { display:grid; grid-template-columns:1fr .9fr; gap:64px; align-items:center; }
+.compactChecks { columns:2; }
+.blueprintFormPanel { background:#061a31; color:white; padding:40px; border-radius:24px; box-shadow:var(--shadow); }
+.blueprintFormPanel h3 { font-size:1.8rem; }
+.kitSubmissionFrame { display:none; }
+.kitCustomForm label { color:white; }
+.kitFormRow { display:grid; grid-template-columns:1fr auto; gap:10px; margin-top:8px; }
+.kitFormRow input { min-height:52px; }
+.kitSubmit { border-radius:8px; white-space:nowrap; }
+.kitFinePrint { color:#afbdcc; font-size:.8rem; margin:9px 0 0; }
+.kitCredit { display:inline-block; color:#8fa2b6; font-size:.74rem; margin-top:8px; }
+.kitSuccess { display:flex; flex-direction:column; gap:5px; padding:18px; border-radius:12px; background:#e7f8ef; color:#0d5e3d; }
+.faqGrid { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; }
+.faqGrid details { border:1px solid var(--line); border-radius:14px; padding:20px; background:white; }
+.faqGrid summary { cursor:pointer; font-weight:850; color:var(--navy); }
+.faqGrid p { color:var(--muted); margin:12px 0 0; }
+
+@media (max-width: 1080px) {
+  .premiumNavbar { min-height:88px; }
+  .markOnlyLogo { width:76px; height:68px; }
+  .premiumHeroGrid { grid-template-columns:1fr; padding-top:58px; }
+  .premiumHeroCopy { max-width:760px; }
+  .capabilityOrbit { width:min(100%,650px); }
+  .premiumNavLinks { gap:17px; }
+  .premiumNavLinks a { font-size:.85rem; }
+}
+@media (max-width: 980px) {
+  .premiumNavLinks { top:88px; }
+  .approachGrid,.solutionPreviewGrid,.launchIncludedGrid { grid-template-columns:1fr; }
+  .approachItem { border-right:0; border-bottom:1px solid #d7dce1; padding:28px 20px; }
+  .approachItem:last-child { border-bottom:0; }
+  .launchHeroLayout,.blueprintGrid { grid-template-columns:1fr; }
+  .launchProcess { grid-template-columns:repeat(3,1fr); }
+  .compactFooterGrid { grid-template-columns:1fr 1fr; }
+  .compactFooterGrid > :first-child { grid-column:1/-1; }
+}
+@media (max-width: 700px) {
+  .premiumNavbar { min-height:78px; }
+  .markOnlyLogo { width:62px; height:58px; }
+  .premiumNavLinks { top:78px; }
+  .premiumHeroGrid { padding:52px 0 34px; gap:24px; }
+  .premiumHeroCopy h1 { font-size:clamp(3rem,15vw,4.7rem); }
+  .capabilityOrbit { aspect-ratio:.9; margin-top:8px; }
+  .orbitCore { width:34%; }
+  .ringOne { width:48%; }.ringTwo{width:62%;}.ringThree{width:78%;}
+  .capabilityLabel { font-size:.66rem; gap:5px; }
+  .capabilityIcon { width:38px; height:38px; }
+  .capabilityIcon svg { width:19px; height:19px; }
+  .capStrategy { left:0; top:8%; }.capOperations{left:-2%;top:43%;}.capSecurity{left:0;bottom:7%;}
+  .capTransformation{right:0;top:8%;}.capData{right:-2%;top:43%;}.capGrowth{right:0;bottom:7%;}
+  .credibilityGrid { grid-template-columns:repeat(2,1fr); }
+  .conversationCtaInner { flex-direction:column; align-items:flex-start; }
+  .launchProcess { grid-template-columns:1fr; }
+  .kitFormRow { grid-template-columns:1fr; }
+  .compactChecks { columns:1; }
+  .faqGrid { grid-template-columns:1fr; }
+  .compactFooterGrid { grid-template-columns:1fr; }
+  .compactFooterGrid > :first-child { grid-column:auto; }
+}
