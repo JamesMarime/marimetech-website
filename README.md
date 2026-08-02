@@ -123,3 +123,7 @@ Upload all extracted files to the existing GitHub repository and commit. Netlify
 
 ## Build fix
 - Replaced the unsupported `Linkedin` Lucide icon import with the stable `Building2` icon.
+
+
+## Static sitemap fix
+- Added `export const dynamic = "force-static";` to `app/sitemap.ts` for compatibility with Next.js static export.
