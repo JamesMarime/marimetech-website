@@ -119,3 +119,7 @@ This release includes:
 - Updated navigation, footer, and sitemap
 
 Upload all extracted files to the existing GitHub repository and commit. Netlify will deploy automatically.
+
+
+## Build fix
+- Replaced the unsupported `Linkedin` Lucide icon import with the stable `Building2` icon.
