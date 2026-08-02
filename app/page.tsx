@@ -1,23 +1,39 @@
 import Link from 'next/link';
-import { ArrowRight, BrainCircuit, ShieldCheck, Workflow } from 'lucide-react';
+import { ArrowRight, BrainCircuit, CheckCircle2, ShieldCheck, Workflow } from 'lucide-react';
 import ServiceCard from '@/components/ServiceCard';
 
 export default function Home() {
   return (
     <main id="main">
-      <section className="hero">
-        <div className="container heroContent">
-          <p className="eyebrow">Technology strategy · Transformation · Executive advisory</p>
-          <h1>Every growing business eventually hits a <span className="gold">bottleneck.</span></h1>
-          <p className="lead">Sometimes it is technology. Sometimes it is process, risk, capability or execution. MarimeTech helps leaders identify the real constraint and build the right path forward.</p>
-          <div className="actions">
-            <Link className="btn btnPrimary" href="/contact">Start the conversation <ArrowRight size={18}/></Link>
-            <Link className="btn btnGhost" href="/services">Explore our capabilities</Link>
+      <section className="hero heroRedesign">
+        <div className="heroGlow heroGlowOne" aria-hidden="true" />
+        <div className="heroGlow heroGlowTwo" aria-hidden="true" />
+        <div className="container heroGrid">
+          <div className="heroContent heroCopy">
+            <p className="eyebrow">Technology strategy · Transformation · Executive advisory</p>
+            <h1>Remove the bottlenecks. <span className="gold">Build what comes next.</span></h1>
+            <p className="lead">MarimeTech helps growing organizations turn technology, process and execution challenges into practical roadmaps for stronger performance, security and growth.</p>
+            <div className="actions">
+              <Link className="btn btnPrimary" href="/contact">Start the conversation <ArrowRight size={18}/></Link>
+              <Link className="btn btnGhost" href="/services">Explore our capabilities</Link>
+            </div>
+            <div className="proof">
+              <div className="proofItem"><strong>Business-first</strong><span>We solve the constraint, not chase the trend.</span></div>
+              <div className="proofItem"><strong>Enterprise experience</strong><span>Complex programs translated into practical action.</span></div>
+              <div className="proofItem"><strong>Built to scale</strong><span>Secure foundations for growth and change.</span></div>
+            </div>
           </div>
-          <div className="proof">
-            <div className="proofItem"><strong>Business-first</strong><span>We solve the constraint, not chase the trend.</span></div>
-            <div className="proofItem"><strong>Enterprise experience</strong><span>Complex programs translated into practical action.</span></div>
-            <div className="proofItem"><strong>Built to scale</strong><span>Secure foundations for growth and change.</span></div>
+
+          <div className="heroPortraitWrap" aria-label="James Marime, Founder and CEO of MarimeTech Solutions">
+            <div className="heroPortraitFrame">
+              <div className="heroPortrait" />
+              <div className="heroPortraitBadge">
+                <span className="heroBadgeMark">M</span>
+                <span><strong>MarimeTech Solutions</strong><small>Transforming today. Empowering tomorrow.</small></span>
+              </div>
+            </div>
+            <div className="heroMetric heroMetricTop"><strong>15+ years</strong><span>Technology leadership</span></div>
+            <div className="heroMetric heroMetricBottom"><strong>Business-first</strong><span>Strategy through delivery</span></div>
           </div>
         </div>
       </section>
@@ -37,7 +53,16 @@ export default function Home() {
 
       <section className="section soft">
         <div className="container split">
-          <div className="visual"><div className="visualCaption">Leverage technology. Transform. Grow.</div></div>
+          <div className="outcomePanel">
+            <p className="eyebrow">The MarimeTech approach</p>
+            <h3>Start with the business constraint.</h3>
+            <div className="outcomeFlow">
+              <div><span>01</span><strong>Diagnose</strong><small>What is actually slowing performance?</small></div>
+              <div><span>02</span><strong>Prioritize</strong><small>What should change first—and why?</small></div>
+              <div><span>03</span><strong>Deliver</strong><small>How do we make the improvement stick?</small></div>
+            </div>
+            <div className="outcomeQuote">“Technology is valuable only when it makes the organization work better.”</div>
+          </div>
           <div>
             <p className="eyebrow">Why MarimeTech</p>
             <h2>Technology should make the business work better.</h2>

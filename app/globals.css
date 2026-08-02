@@ -223,3 +223,139 @@ textarea { min-height: 170px; resize: vertical; }
   .brandText { display: none; }
   .founderPortrait { min-height: 360px; }
 }
+
+/* Homepage redesign: dedicated hero assets, no cropped banner imagery */
+.heroRedesign {
+  min-height: 780px;
+  background:
+    linear-gradient(135deg, #04152a 0%, #082746 55%, #0b3158 100%);
+  isolation: isolate;
+}
+.heroRedesign:after { display: none; }
+.heroGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(360px, .92fr);
+  gap: 68px;
+  align-items: center;
+  padding-top: 92px;
+  padding-bottom: 92px;
+  position: relative;
+  z-index: 2;
+}
+.heroCopy { padding: 0; }
+.heroCopy h1 { font-size: clamp(3.35rem, 6.2vw, 6.3rem); max-width: 900px; }
+.heroGlow { position: absolute; border-radius: 50%; filter: blur(8px); pointer-events: none; z-index: 0; }
+.heroGlowOne { width: 430px; height: 430px; right: -120px; top: 40px; background: rgba(239,185,82,.11); }
+.heroGlowTwo { width: 320px; height: 320px; left: 34%; bottom: -150px; background: rgba(24,94,158,.28); }
+.heroPortraitWrap { position: relative; min-height: 610px; display: grid; place-items: center; }
+.heroPortraitFrame {
+  width: min(100%, 470px);
+  height: 610px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 34px;
+  border: 1px solid rgba(255,255,255,.16);
+  background: #0a294a;
+  box-shadow: 0 36px 90px rgba(0,0,0,.35);
+}
+.heroPortrait {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, transparent 55%, rgba(4,21,42,.64) 100%),
+    url('/james-marime-founder.jpg') center 22%/cover no-repeat;
+}
+.heroPortraitBadge {
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  bottom: 22px;
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  padding: 15px 17px;
+  background: rgba(4,21,42,.86);
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+}
+.heroBadgeMark {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 44px;
+  color: var(--gold);
+  border: 2px solid var(--gold);
+  border-radius: 12px;
+  font-size: 1.15rem;
+  font-weight: 900;
+}
+.heroPortraitBadge strong { display: block; color: white; font-size: .98rem; }
+.heroPortraitBadge small { display: block; color: #b9c6d4; font-size: .73rem; margin-top: 2px; }
+.heroMetric {
+  position: absolute;
+  z-index: 3;
+  min-width: 180px;
+  padding: 15px 18px;
+  border-radius: 17px;
+  background: rgba(255,255,255,.96);
+  color: var(--navy);
+  box-shadow: 0 18px 46px rgba(0,0,0,.22);
+}
+.heroMetric strong { display: block; color: var(--gold-2); font-size: 1.05rem; }
+.heroMetric span { display: block; font-size: .78rem; color: #5d6c7f; margin-top: 2px; }
+.heroMetricTop { top: 74px; left: -48px; }
+.heroMetricBottom { right: -42px; bottom: 92px; }
+
+.outcomePanel {
+  min-height: 540px;
+  padding: 42px;
+  border-radius: 30px;
+  color: white;
+  background:
+    radial-gradient(circle at 85% 8%, rgba(239,185,82,.18), transparent 31%),
+    linear-gradient(145deg, #061a31, #0d3763);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.outcomePanel h3 { font-size: clamp(2rem, 3vw, 3rem); max-width: 560px; }
+.outcomeFlow { display: grid; gap: 14px; margin-top: 18px; }
+.outcomeFlow > div {
+  display: grid;
+  grid-template-columns: 46px 120px 1fr;
+  gap: 14px;
+  align-items: center;
+  padding: 16px;
+  border-radius: 16px;
+  background: rgba(255,255,255,.07);
+  border: 1px solid rgba(255,255,255,.09);
+}
+.outcomeFlow span { color: var(--gold); font-weight: 900; }
+.outcomeFlow strong { color: white; }
+.outcomeFlow small { color: #c8d4e1; }
+.outcomeQuote { margin-top: 24px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.14); color: #d9e2eb; font-style: italic; }
+
+@media (max-width: 1040px) {
+  .heroGrid { grid-template-columns: 1fr; gap: 42px; }
+  .heroPortraitWrap { min-height: 580px; }
+  .heroPortraitFrame { width: min(100%, 560px); }
+  .heroMetricTop { left: max(0px, calc(50% - 330px)); }
+  .heroMetricBottom { right: max(0px, calc(50% - 330px)); }
+}
+@media (max-width: 640px) {
+  .heroRedesign { min-height: auto; }
+  .heroGrid { padding-top: 66px; padding-bottom: 70px; gap: 36px; }
+  .heroCopy h1 { font-size: clamp(3rem, 15vw, 4.2rem); }
+  .heroPortraitWrap { min-height: 470px; }
+  .heroPortraitFrame { height: 470px; border-radius: 26px; }
+  .heroMetric { position: static; min-width: 0; width: calc(50% - 7px); padding: 12px; }
+  .heroPortraitWrap { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 14px; }
+  .heroPortraitFrame { width: 100%; }
+  .heroPortraitBadge { left: 14px; right: 14px; bottom: 14px; }
+  .outcomePanel { min-height: auto; padding: 30px 22px; }
+  .outcomeFlow > div { grid-template-columns: 38px 1fr; }
+  .outcomeFlow small { grid-column: 2; }
+}
