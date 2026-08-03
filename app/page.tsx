@@ -1,28 +1,16 @@
 import Link from 'next/link';
 import {
   ArrowRight,
-  BarChart3,
   CalendarDays,
   CheckCircle2,
-  Cloud,
   Focus,
   Gauge,
-  LockKeyhole,
   Rocket,
   ShieldCheck,
-  Target,
   UsersRound,
   Workflow
 } from 'lucide-react';
 
-const capabilityLabels = [
-  { label: 'Strategy', icon: <Target />, position: 'capStrategy' },
-  { label: 'Operations', icon: <Workflow />, position: 'capOperations' },
-  { label: 'Security', icon: <LockKeyhole />, position: 'capSecurity' },
-  { label: 'Transformation', icon: <Cloud />, position: 'capTransformation' },
-  { label: 'Data & AI', icon: <BarChart3 />, position: 'capData' },
-  { label: 'Growth', icon: <UsersRound />, position: 'capGrowth' },
-];
 
 export default function Home() {
   return (
@@ -42,17 +30,15 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="capabilityOrbit" aria-label="MarimeTech capabilities: strategy, operations, security, transformation, data and AI, and growth">
-            <div className="orbitRing ringOne" />
-            <div className="orbitRing ringTwo" />
-            <div className="orbitRing ringThree" />
-            <div className="orbitCore"><img src="/marimetech-icon.png" alt="" /></div>
-            {capabilityLabels.map(item => (
-              <div key={item.label} className={`capabilityLabel ${item.position}`}>
-                <span className="capabilityIcon">{item.icon}</span>
-                <strong>{item.label}</strong>
-              </div>
-            ))}
+          <div className="heroCapabilitiesVisual">
+            <img
+              src="/marimetech-capabilities.webp"
+              alt="MarimeTech capabilities: Strategy, Transformation, Operations, Data and AI, Security, and Growth"
+              width="1400"
+              height="933"
+              loading="eager"
+              decoding="async"
+            />
           </div>
         </div>
       </section>

@@ -146,3 +146,11 @@ Upload all extracted files to the existing GitHub repository and commit. Netlify
 - Added M + MarimeTech Solutions Inc. text lockup in header and footer
 - Updated About page hero to About MarimeTech Solutions Inc.
 - Retained the user's existing photo and Founder & CEO title
+
+
+## Website v2.1 — Capability Visual Update
+- Replaced the coded homepage orbit with the approved MarimeTech capability graphic
+- Retained the six concise capability labels only
+- Optimized the graphic as WebP for faster loading
+- Added responsive desktop and mobile presentation
+- No changes to Kit, About Us, navigation, forms, sitemap, or hosting configuration
