@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
-import { CalendarDays, CheckCircle2 } from 'lucide-react';
-import TidyCalEmbed from '@/components/TidyCalEmbed';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Book a Call',
@@ -10,45 +9,32 @@ export const metadata: Metadata = {
 export default function BookACallPage() {
   return (
     <main id="main">
-      <section className="pageHero bookingHero">
-        <div className="container bookingHeroInner">
-          <p className="eyebrow">Book a conversation</p>
-          <h1>Let&apos;s talk about your business.</h1>
-          <p>
-            Choose a convenient time below for a focused conversation about where you are today,
-            what you are trying to achieve and whether MarimeTech can help.
+      <section className="bookingLanding">
+        <div className="container bookingLandingInner">
+          <p className="bookingKicker">MARIMETECH SOLUTIONS INC.</p>
+          <h1>Let&apos;s talk about what your business needs next.</h1>
+          <p className="bookingLead">
+            A focused conversation to understand where you are today, what you are trying to achieve,
+            and whether MarimeTech can help you move forward securely and practically.
           </p>
-        </div>
-      </section>
 
-      <section className="section bookingSection">
-        <div className="container bookingGrid">
-          <aside className="bookingIntro">
-            <div className="bookingIcon"><CalendarDays size={26} /></div>
-            <p className="eyebrow">A focused first conversation</p>
-            <h2>Start with the business need.</h2>
-            <p className="lead muted">
-              This is not a sales presentation. It is an opportunity to understand the challenge,
-              the outcome you need and the most sensible next step.
-            </p>
-            <div className="bookingTopics">
-              <div><CheckCircle2 size={19} /><span>Technology strategy &amp; transformation</span></div>
-              <div><CheckCircle2 size={19} /><span>Operations &amp; business systems</span></div>
-              <div><CheckCircle2 size={19} /><span>Cybersecurity &amp; resilience</span></div>
-              <div><CheckCircle2 size={19} /><span>AI &amp; workflow opportunities</span></div>
-              <div><CheckCircle2 size={19} /><span>Launching or strengthening your digital presence</span></div>
-            </div>
-            <p className="bookingNote">Select the meeting option and time that works best for you. You&apos;ll receive the booking confirmation directly from TidyCal.</p>
-          </aside>
+          <a
+            className="bookingPrimaryButton"
+            href="https://tidycal.com/1d4rvwj"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Book Your Call <ArrowRight size={20} />
+          </a>
 
-          <div className="bookingCard">
-            <div className="bookingCardHeader">
-              <p className="eyebrow">Choose a time</p>
-              <h2>Book your conversation</h2>
-              <p className="muted">Available times are shown in your local timezone.</p>
-            </div>
-            <TidyCalEmbed />
+          <div className="bookingLandingTopics" aria-label="Topics we can discuss">
+            <span><CheckCircle2 size={17} /> Technology &amp; Transformation</span>
+            <span><CheckCircle2 size={17} /> Operations &amp; Business Systems</span>
+            <span><CheckCircle2 size={17} /> Cybersecurity &amp; Resilience</span>
+            <span><CheckCircle2 size={17} /> AI &amp; Workflow Opportunities</span>
           </div>
+
+          <p className="bookingMicrocopy">No obligation. Just a practical first conversation.</p>
         </div>
       </section>
     </main>
