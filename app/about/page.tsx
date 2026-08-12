@@ -138,7 +138,7 @@ export default function AboutPage() {
               right next move.
             </p>
           </div>
-          <Link className="btn btnPrimary" href="/contact">Book a conversation</Link>
+          <Link className="btn btnPrimary" href="/book-a-call">Book a conversation</Link>
         </div>
       </section>
     </main>

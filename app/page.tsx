@@ -25,7 +25,7 @@ export default function Home() {
               Helping organizations identify and remove business bottlenecks through <strong>secure</strong> technology transformation.
             </p>
             <div className="actions premiumHeroActions">
-              <Link className="btn btnPrimary" href="/contact"><CalendarDays size={18}/> Book a conversation</Link>
+              <Link className="btn btnPrimary" href="/book-a-call"><CalendarDays size={18}/> Book a conversation</Link>
               <Link className="btn btnOutlineGold" href="/services">Explore our solutions <ArrowRight size={18}/></Link>
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function Home() {
             <h2>Ready to move your business forward?</h2>
             <p>Let&apos;s start with a conversation about your goals, your challenges, and the technology that can help remove the bottlenecks holding you back.</p>
           </div>
-          <Link className="btn btnPrimary" href="/contact"><CalendarDays size={18}/> Book a conversation</Link>
+          <Link className="btn btnPrimary" href="/book-a-call"><CalendarDays size={18}/> Book a conversation</Link>
         </div>
       </section>
     </main>

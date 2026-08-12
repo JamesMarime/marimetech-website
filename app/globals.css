@@ -970,3 +970,44 @@ textarea { min-height: 170px; resize: vertical; }
     filter: drop-shadow(0 14px 26px rgba(0, 0, 0, .22));
   }
 }
+
+/* Book a Call */
+.bookingHero { padding-bottom: 82px; }
+.bookingHeroInner { max-width: 1000px; }
+.bookingHero h1 { max-width: 880px; }
+.bookingSection { background: linear-gradient(180deg, #f4f7fb 0%, #fff 100%); }
+.bookingGrid {
+  display: grid;
+  grid-template-columns: .72fr 1.28fr;
+  gap: 48px;
+  align-items: start;
+}
+.bookingIntro { padding: 30px 8px 30px 0; position: sticky; top: 112px; }
+.bookingIntro h2 { font-size: clamp(2.25rem, 4vw, 3.5rem); margin-bottom: 22px; }
+.bookingIcon {
+  width: 58px; height: 58px; display: grid; place-items: center;
+  border-radius: 17px; background: var(--cream); color: var(--gold-2); margin-bottom: 24px;
+}
+.bookingTopics { display: grid; gap: 15px; margin: 30px 0; }
+.bookingTopics div { display: flex; align-items: flex-start; gap: 11px; font-weight: 720; color: var(--navy); }
+.bookingTopics svg { flex: 0 0 auto; color: var(--gold-2); margin-top: 3px; }
+.bookingNote { border-left: 3px solid var(--gold); padding-left: 16px; color: var(--muted); font-size: .94rem; }
+.bookingCard {
+  background: #fff; border: 1px solid var(--line); border-radius: 28px;
+  padding: 34px; box-shadow: var(--shadow); min-height: 700px;
+}
+.bookingCardHeader { padding: 4px 6px 22px; border-bottom: 1px solid var(--line); margin-bottom: 12px; }
+.bookingCardHeader h2 { font-size: 2rem; margin-bottom: 8px; }
+.bookingCardHeader p:last-child { margin-bottom: 0; }
+.bookingCard .tidycal-embed { width: 100%; min-height: 620px; }
+
+@media (max-width: 900px) {
+  .bookingGrid { grid-template-columns: 1fr; gap: 28px; }
+  .bookingIntro { position: static; padding: 0; }
+  .bookingCard { padding: 24px 18px; }
+}
+@media (max-width: 560px) {
+  .bookingSection { padding-top: 58px; }
+  .bookingCard { padding: 20px 10px; border-radius: 20px; }
+  .bookingCardHeader { padding-inline: 8px; }
+}

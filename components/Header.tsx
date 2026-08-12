@@ -32,7 +32,7 @@ export default function Header() {
           </button>
           <nav className={`navLinks premiumNavLinks ${open ? 'open' : ''}`} aria-label="Primary navigation">
             {links.map(([href,label]) => <Link key={href} href={href} onClick={() => setOpen(false)}>{label}</Link>)}
-            <Link className="btn btnOutlineGold navCta" href="/contact" onClick={() => setOpen(false)}>
+            <Link className="btn btnOutlineGold navCta" href="/book-a-call" onClick={() => setOpen(false)}>
               <CalendarDays size={17}/> Book a conversation
             </Link>
           </nav>

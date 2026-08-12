@@ -37,7 +37,7 @@ export default function LaunchYourBusinessPage() {
             <h1>Launch Your Business. <span className="gold">Professionally.</span></h1>
             <p>Everything you need to establish a credible, secure online presence—without the technical headaches.</p>
             <div className="actions">
-              <Link className="btn btnPrimary" href="/contact"><CalendarDays size={18}/> Book a conversation</Link>
+              <Link className="btn btnPrimary" href="/book-a-call"><CalendarDays size={18}/> Book a conversation</Link>
               <a className="btn btnOutlineGold" href="#blueprint">Get the free blueprint <ArrowRight size={18}/></a>
             </div>
           </div>
@@ -115,7 +115,7 @@ export default function LaunchYourBusinessPage() {
       <section className="conversationCta">
         <div className="container conversationCtaInner">
           <div><h2>Ready to launch professionally?</h2><p>Let&apos;s talk about your business, what is already in place and the fastest practical path forward.</p></div>
-          <Link className="btn btnPrimary" href="/contact"><CalendarDays size={18}/> Book a conversation</Link>
+          <Link className="btn btnPrimary" href="/book-a-call"><CalendarDays size={18}/> Book a conversation</Link>
         </div>
       </section>
     </main>
