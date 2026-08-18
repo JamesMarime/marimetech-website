@@ -1129,3 +1129,84 @@ textarea { min-height: 170px; resize: vertical; }
   .bookingLandingTopics { flex-direction: column; align-items: center; }
   .bookingPrimaryButton { width: min(100%, 320px); }
 }
+
+/* MarimeTech Signature Homepage — bottleneck strategy */
+.signatureHome { background:#fff; }
+.signatureHero { min-height:720px; position:relative; overflow:hidden; color:#fff; background:linear-gradient(118deg,#021326 0%,#061d36 58%,#0b3155 100%); }
+.heroTexture { position:absolute; inset:0; opacity:.55; background:radial-gradient(circle at 78% 28%,rgba(239,185,82,.16),transparent 24%),radial-gradient(circle at 86% 75%,rgba(0,142,213,.15),transparent 30%),linear-gradient(120deg,transparent 0 62%,rgba(255,255,255,.025) 62% 63%,transparent 63% 100%); }
+.signatureHeroGrid { min-height:720px; display:grid; grid-template-columns:1.03fr .97fr; gap:70px; align-items:center; position:relative; z-index:2; padding-block:70px; }
+.signatureHeroCopy h1 { font-size:clamp(4rem,7vw,7rem); line-height:.88; text-transform:uppercase; letter-spacing:-.065em; margin:16px 0 18px; max-width:760px; }
+.signatureHeroCopy h1 span,.goldText { color:var(--gold); }
+.signatureKicker { font-size:clamp(1.5rem,2.4vw,2.15rem); font-weight:800; color:#fff; margin:0 0 22px; letter-spacing:-.03em; }
+.signatureHeroCopy .lead { color:#cad6e1; max-width:700px; font-size:1.12rem; }
+.signatureHeroCopy .lead strong { color:#fff; }
+.signatureBtn { border-radius:6px; min-height:56px; padding-inline:27px; }
+.signatureGhost { border:1px solid rgba(255,255,255,.42); color:#fff; background:rgba(255,255,255,.025); }
+.signatureGhost:hover { border-color:var(--gold); }
+.heroTrustLine { margin-top:34px; display:flex; flex-wrap:wrap; align-items:center; gap:8px; color:#9fb0c0; font-size:.78rem; text-transform:uppercase; letter-spacing:.045em; }
+.heroTrustLine svg { color:var(--gold); }
+.heroTrustLine span { width:1px; height:15px; background:rgba(255,255,255,.18); margin:0 7px; }
+.signatureHeroVisual { position:relative; min-height:520px; display:grid; place-items:center; }
+.visualHalo { position:absolute; width:430px; height:430px; border-radius:50%; border:1px solid rgba(70,155,214,.18); box-shadow:0 0 0 55px rgba(42,124,184,.035),0 0 0 110px rgba(42,124,184,.025); }
+.visualCardMain { width:min(100%,570px); position:relative; z-index:2; padding:34px; border:1px solid rgba(255,255,255,.14); border-radius:20px; background:linear-gradient(145deg,rgba(10,43,75,.94),rgba(3,22,42,.96)); box-shadow:0 38px 90px rgba(0,0,0,.38); backdrop-filter:blur(12px); }
+.visualCardTop { display:flex; gap:9px; align-items:center; color:var(--gold); font-size:.72rem; font-weight:900; letter-spacing:.13em; }
+.visualStatement { margin:30px 0 34px; font-size:clamp(1.65rem,2.5vw,2.35rem); line-height:1.15; color:#dce5ee; }
+.visualStatement strong { color:#fff; }
+.visualFlow { display:grid; grid-template-columns:1fr auto 1fr auto 1fr auto 1fr; align-items:center; gap:8px; }
+.visualFlow > svg { width:16px; color:#67839d; }
+.visualFlow div { min-width:0; }
+.visualFlow span,.visualFlow b,.visualFlow small { display:block; }
+.visualFlow span { color:var(--gold); font-size:.7rem; font-weight:900; }
+.visualFlow b { color:#fff; font-size:.9rem; margin:3px 0; }
+.visualFlow small { color:#93a7ba; font-size:.65rem; line-height:1.2; }
+.floatingProof { position:absolute; z-index:3; padding:14px 17px; border-radius:12px; background:#fff; color:var(--navy); box-shadow:0 18px 45px rgba(0,0,0,.25); }
+.floatingProof strong,.floatingProof span { display:block; }
+.floatingProof strong { color:var(--gold-2); font-size:1.05rem; }
+.floatingProof span { color:#5e6d7c; font-size:.72rem; }
+.proofOne { top:42px; right:-12px; }
+.proofTwo { bottom:48px; left:-18px; display:flex; align-items:center; gap:9px; font-weight:800; font-size:.78rem; }
+.proofTwo svg { color:var(--gold-2); }
+.signatureProofBar { background:#fff; border-bottom:1px solid #e1e7ed; box-shadow:0 8px 25px rgba(6,26,49,.05); }
+.signatureProofGrid { display:grid; grid-template-columns:repeat(4,1fr); }
+.signatureProofGrid > div { min-height:122px; display:flex; flex-direction:column; justify-content:center; padding:25px 28px; border-right:1px solid #e1e7ed; }
+.signatureProofGrid > div:last-child { border-right:0; }
+.signatureProofGrid strong { color:var(--navy); font-size:1.12rem; }
+.signatureProofGrid > div:first-child strong { color:var(--gold-2); font-size:1.75rem; }
+.signatureProofGrid span { color:#738193; font-size:.78rem; margin-top:5px; }
+.signatureIntro { padding-block:110px; }
+.signatureIntroGrid { display:grid; grid-template-columns:1fr .9fr; gap:90px; align-items:start; }
+.signatureIntro h2 { font-size:clamp(2.8rem,4.8vw,4.8rem); }
+.signatureIntroCopy { border-left:2px solid var(--gold); padding-left:34px; }
+.signatureIntroCopy .lead { color:var(--navy); font-weight:700; }
+.signatureIntroCopy p:last-child { color:var(--muted); }
+.methodSection { background:#f4f6f8; }
+.methodHeading { display:flex; align-items:end; justify-content:space-between; gap:50px; margin-bottom:50px; }
+.methodHeading h2 { margin-bottom:0; }
+.methodHeading > p { max-width:420px; color:var(--muted); }
+.methodGrid { display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid #cfd7df; }
+.methodCard { position:relative; padding:34px 28px 24px; border-right:1px solid #cfd7df; min-height:330px; }
+.methodCard:last-child { border-right:0; }
+.methodCard > svg { color:var(--gold-2); width:34px; height:34px; margin:34px 0 22px; }
+.methodNumber { position:absolute; top:-15px; left:28px; background:#f4f6f8; padding:0 8px; color:#8996a4; font-size:.75rem; font-weight:900; }
+.methodCard p { color:var(--muted); font-size:.92rem; }
+.capabilitiesSection { background:#fff; }
+.capabilitiesHeading { max-width:790px; margin-bottom:50px; }
+.capabilitiesHeading > p:last-child { color:var(--muted); max-width:680px; }
+.capabilitiesGrid { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }
+.capabilityCard { position:relative; min-height:300px; padding:38px; border:1px solid #dfe5eb; background:#fff; overflow:hidden; transition:.25s ease; }
+.capabilityCard:after { content:""; position:absolute; width:150px; height:150px; right:-65px; bottom:-65px; border-radius:50%; background:var(--cream); transition:.25s ease; }
+.capabilityCard:hover { transform:translateY(-4px); box-shadow:0 22px 50px rgba(6,26,49,.09); }
+.capabilityCardIcon { width:54px; height:54px; display:grid; place-items:center; background:var(--navy); color:var(--gold); border-radius:10px; margin-bottom:28px; }
+.capabilityCard p { color:var(--muted); max-width:500px; }
+.capabilityCard a { display:inline-flex; align-items:center; gap:8px; color:var(--navy); font-weight:900; position:relative; z-index:2; }
+.signatureCta { background:linear-gradient(115deg,#03172d,#0a3158); color:#fff; padding:72px 0; }
+.signatureCtaInner { display:flex; justify-content:space-between; align-items:center; gap:60px; }
+.signatureCta h2 { font-size:clamp(2.4rem,4vw,4rem); margin-bottom:12px; }
+.signatureCta p:not(.eyebrow) { color:#c7d4df; max-width:700px; margin-bottom:0; }
+
+@media(max-width:1040px){
+ .signatureHeroGrid{grid-template-columns:1fr;gap:28px}.signatureHeroCopy{padding-top:25px}.signatureHeroVisual{min-height:430px}.signatureProofGrid{grid-template-columns:repeat(2,1fr)}.signatureProofGrid>div:nth-child(2){border-right:0}.signatureProofGrid>div:nth-child(-n+2){border-bottom:1px solid #e1e7ed}.signatureIntroGrid{grid-template-columns:1fr;gap:35px}.methodGrid{grid-template-columns:repeat(2,1fr)}.methodCard:nth-child(2){border-right:0}.methodCard:nth-child(-n+2){border-bottom:1px solid #cfd7df}.methodHeading{align-items:start;flex-direction:column;gap:12px}
+}
+@media(max-width:640px){
+ .signatureHeroGrid{min-height:auto;padding-block:62px}.signatureHeroCopy h1{font-size:clamp(3.4rem,17vw,5rem)}.signatureHeroVisual{min-height:400px}.visualCardMain{padding:24px 18px}.visualFlow{grid-template-columns:repeat(4,1fr);gap:7px}.visualFlow>svg{display:none}.floatingProof{display:none}.heroTrustLine span{display:none}.heroTrustLine{gap:7px 12px}.signatureProofGrid{grid-template-columns:1fr 1fr}.signatureProofGrid>div{padding:20px 16px;min-height:112px}.signatureIntro{padding-block:76px}.signatureIntroCopy{padding-left:22px}.methodGrid{grid-template-columns:1fr}.methodCard,.methodCard:nth-child(2){border-right:0;border-bottom:1px solid #cfd7df}.methodCard:last-child{border-bottom:0}.capabilitiesGrid{grid-template-columns:1fr}.signatureCtaInner{align-items:flex-start;flex-direction:column;gap:30px}.signatureCtaInner .btn{width:100%}
+}
