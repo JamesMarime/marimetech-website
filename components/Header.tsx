@@ -2,15 +2,14 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { CalendarDays } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const links = [
   ['/', 'Home'],
-  ['/launch-your-business', 'Launch Your Business'],
-  ['/services', 'Solutions'],
-  ['/about', 'About Us'],
-  ['/insights', 'Insights'],
-  ['/contact', 'Contact'],
+  ['/about', 'About'],
+  ['/services', 'Services'],
+  ['/#experience', 'Our Work'],
+  ['/insights', 'Resources'],
 ];
 
 export default function Header() {
@@ -18,22 +17,20 @@ export default function Header() {
   return (
     <>
       <a className="skip" href="#main">Skip to content</a>
-      <header className="header premiumHeader">
-        <div className="container navbar premiumNavbar">
-          <Link href="/" className="brand brandLockup" aria-label="MarimeTech Solutions Inc. home">
-            <img className="markOnlyLogo" src="/marimetech-icon.png" alt="" aria-hidden="true" />
-            <span className="brandWordmark">
-              <strong>MARIMETECH</strong>
-              <small>Solutions Inc.</small>
-            </span>
+      <header className="header referenceHeader">
+        <div className="container navbar referenceNavbar">
+          <Link href="/" className="referenceBrand" aria-label="MarimeTech Solutions Inc. home">
+            <img src="/marimetech-header-logo.png" alt="MarimeTech Solutions Inc." />
           </Link>
           <button className="navToggle" aria-expanded={open} aria-label="Toggle navigation" onClick={() => setOpen(!open)}>
             <span></span><span></span><span></span>
           </button>
-          <nav className={`navLinks premiumNavLinks ${open ? 'open' : ''}`} aria-label="Primary navigation">
-            {links.map(([href,label]) => <Link key={href} href={href} onClick={() => setOpen(false)}>{label}</Link>)}
-            <Link className="btn btnOutlineGold navCta" href="/book-a-call" onClick={() => setOpen(false)}>
-              <CalendarDays size={17}/> Book a conversation
+          <nav className={`navLinks referenceNavLinks ${open ? 'open' : ''}`} aria-label="Primary navigation">
+            {links.map(([href, label]) => (
+              <Link key={href} href={href} onClick={() => setOpen(false)}>{label}</Link>
+            ))}
+            <Link className="referenceNavCta" href="/book-a-call" onClick={() => setOpen(false)}>
+              Book a Call <ArrowRight size={15} />
             </Link>
           </nav>
         </div>
