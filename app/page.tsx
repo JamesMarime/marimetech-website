@@ -1,51 +1,27 @@
 import Link from 'next/link';
-import { ArrowRight, CalendarDays, CheckCircle2, Cloud, Headphones, Rocket, ShieldCheck, Sparkles, Users, Server, Globe2, HeartHandshake } from 'lucide-react';
+import { ArrowRight, CalendarDays, Monitor, ShieldCheck, CloudCog, Headphones, Users, Rocket, BarChart3, MapPin, Server, LockKeyhole } from 'lucide-react';
 
 const services = [
-  {icon: Rocket, title:'Launch Your Business', text:'Website, domain, professional email and the essential technology setup to get you started right.', href:'/launch-your-business'},
-  {icon: Headphones, title:'Managed IT & Support', text:'Day-to-day IT management, device and user support, Microsoft 365 and vendor coordination.', href:'/services'},
-  {icon: Cloud, title:'Cloud & Modern Workplace', text:'Cloud migrations, infrastructure modernization and collaboration tools that help you work smarter.', href:'/services'},
-  {icon: ShieldCheck, title:'Cybersecurity & Resilience', text:'Protect your business with stronger security, identity management and disaster recovery.', href:'/services'},
-  {icon: Sparkles, title:'Digital Transformation & AI', text:'Process improvement, automation and AI-enabled solutions for measurable business value.', href:'/services'},
-  {icon: Users, title:'Technology Strategy & Advisory', text:'Fractional CIO/CTO, roadmaps and executive guidance to help you make the right decisions.', href:'/services'},
+  {icon: Rocket,title:'Launch Your Business',text:'Websites, domain, professional email and the essential tech setup to get you started right.',href:'/launch-your-business',image:'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=88'},
+  {icon: Headphones,title:'Managed IT & Support',text:'Day-to-day IT management, device support, Microsoft 365 and vendor coordination.',href:'/services',image:'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=88'},
+  {icon: CloudCog,title:'Cloud & Modern Workplace',text:'Cloud migrations, infrastructure and collaboration tools that help you work smarter.',href:'/services',image:'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=88'},
+  {icon: ShieldCheck,title:'Cybersecurity & Resilience',text:'Protect your business with stronger security, identity management and disaster recovery.',href:'/services',image:'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=88'},
+  {icon: BarChart3,title:'Digital Transformation & AI',text:'Process improvement, automation and AI-enabled solutions for real business value.',href:'/services',image:'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=88'},
+  {icon: Users,title:'Technology Strategy & Advisory',text:'Fractional CIO/CTO, roadmaps and executive guidance to help you make the right decisions.',href:'/services',image:'https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=88'},
 ];
 
-const work = [
-  {icon: Server, kicker:'Infrastructure Modernization', title:'Enterprise infrastructure, delivered with control.', text:'Data centre relocation, cloud migration and resilient technology foundations for growing organizations.'},
-  {icon: Globe2, kicker:'Digital Presence & Web Platforms', title:'Digital experiences that earn attention and trust.', text:'Modern websites and digital platforms built to tell your story, work beautifully on mobile and support growth.'},
-  {icon: HeartHandshake, kicker:'Mission-Driven Organizations', title:'Technology that helps teams do more good.', text:'Secure, practical modernization for non-profits and community organizations working with real-world constraints.'},
-  {icon: Headphones, kicker:'Growing Businesses', title:'A technology partner as you scale.', text:'Ongoing support, security and strategic guidance without the overhead of building a full internal IT function.'},
+const work=[
+ {icon:Server,title:'Infrastructure Modernization',text:'Data centre relocation and cloud migration for growing organizations.'},
+ {icon:Monitor,title:'Digital Presence & Web Platforms',text:'Modern websites and digital platforms that tell your story and support your goals.'},
+ {icon:ShieldCheck,title:'Non-Profit Technology Transformation',text:'Helping mission-driven organizations do more with reliable technology.'},
+ {icon:Users,title:'Growing Businesses',text:'Ongoing IT support and strategic guidance for organizations that are scaling.'}
 ];
 
-export default function Home() {
-  return <main id="main" className="mtHome">
-    <section className="mtHero">
-      <div className="mtHeroPhoto" aria-hidden="true" />
-      <div className="container mtHeroInner">
-        <div className="mtHeroCopy">
-          <p className="mtKicker">Technology transformation for growing organizations</p>
-          <h1>Technology that<br/>moves you <span>forward.</span></h1>
-          <p className="mtHeroLead">Practical, secure and scalable solutions to help you start, grow and build a stronger tomorrow.</p>
-          <div className="mtActions"><Link href="/book-a-call" className="mtBtn mtBtnPrimary">Book a Conversation <ArrowRight size={17}/></Link><a href="#services" className="mtBtn mtBtnGhost">Explore Our Services</a></div>
-        </div>
-      </div>
-      <div className="container mtTrustStrip"><span><CheckCircle2/> Trusted partner for growing businesses</span><span><ShieldCheck/> Secure, reliable and future-ready</span><span><Sparkles/> From ideas to real impact</span></div>
-    </section>
-
-    <section className="mtSection" id="services"><div className="container">
-      <div className="mtSectionHead"><div><p className="mtKicker">Our services</p><h2>Complete technology support.<br/>At every stage of your journey.</h2></div><p>Whether you’re launching a new business, modernizing your infrastructure or looking for a long-term technology partner, MarimeTech delivers practical, secure and scalable solutions.</p></div>
-      <div className="mtServiceGrid">{services.map(({icon:Icon,title,text,href})=><article className="mtServiceCard" key={title}><div className="mtServiceIcon"><Icon/></div><h3>{title}</h3><p>{text}</p><Link href={href}>Learn more <ArrowRight size={14}/></Link></article>)}</div>
-    </div></section>
-
-    <section className="mtPartner"><div className="container mtPartnerGrid">
-      <div className="mtPartnerCopy"><p className="mtKicker">About MarimeTech</p><h2>More than IT services.<br/>A long-term partner.</h2><p>We help organizations leverage technology to operate more efficiently, securely and competitively. We combine real-world experience with practical solutions designed to create lasting value.</p><Link href="/about" className="mtBtn mtBtnPrimary">Our Story <ArrowRight size={16}/></Link><div className="mtNumbers"><div><strong>15+</strong><span>Years experience</span></div><div><strong>75+</strong><span>Projects delivered</span></div><div><strong>End-to-end</strong><span>Strategy to execution</span></div></div></div>
-      <div className="mtPartnerVisual"><img src="/marimetech-capabilities.webp" alt="MarimeTech technology capabilities: strategy, transformation, data and AI, growth, security and operations"/></div>
-    </div></section>
-
-    <section className="mtSection mtWork"><div className="container"><div className="mtSectionHead mtWorkHead"><div><p className="mtKicker">Selected work</p><h2>Real organizations. Real outcomes.</h2></div><Link href="/about">See our experience <ArrowRight size={14}/></Link></div><div className="mtWorkGrid">{work.map(({icon:Icon,kicker,title,text})=><article className="mtWorkCard" key={kicker}><div className="mtWorkImage"><Icon/></div><p className="mtWorkKicker">{kicker}</p><h3>{title}</h3><p>{text}</p></article>)}</div></div></section>
-
-    <section className="mtQuote"><div className="container"><blockquote>“Practical technology. Clear decisions. A partner focused on what your organization actually needs.”</blockquote></div></section>
-
-    <section className="mtFinalCta"><div className="container mtFinalInner"><div><p className="mtKicker mtKickerLight">Let’s talk</p><h2>A better, more capable tomorrow<br/>starts with a conversation.</h2></div><div><Link href="/book-a-call" className="mtBtn mtBtnLight"><CalendarDays size={17}/> Book a Conversation <ArrowRight size={17}/></Link><p>No pressure. Just a conversation about your goals.</p></div></div></section>
-  </main>
-}
+export default function Home(){return <main id="main" className="premiumHome">
+<section className="premiumHero"><div className="premiumHeroShade"/><div className="container premiumHeroInner"><div className="premiumHeroCopy"><p className="premiumKicker">Technology transformation for growing organizations</p><h1>Practical Technology<br/>for <span>Real Progress.</span></h1><p>We help businesses start, grow and operate more efficiently with secure, scalable and future-ready technology solutions.</p><div className="actions"><Link className="premiumGoldBtn" href="/book-a-call">Book a Conversation <ArrowRight size={18}/></Link><a className="premiumOutlineBtn" href="#services">Explore Our Services</a></div><div className="premiumTrust"><span><Users/>Trusted Partner<br/>for Growing Businesses</span><span><ShieldCheck/>Secure & Reliable<br/>Solutions</span><span><BarChart3/>From Ideas<br/>to Real Impact</span></div></div></div></section>
+<section className="premiumStats"><div className="container premiumStatsGrid"><div><BarChart3/><strong>15+</strong><span>Years Experience</span></div><div><Users/><strong>20–1000+</strong><span>Users Supported</span></div><div><CloudCog/><strong>Cloud, Security & IT</strong><span>End-to-end Solutions</span></div><div><MapPin/><strong>Toronto & Beyond</strong><span>North America Support</span></div></div></section>
+<section className="premiumServices" id="services"><div className="container"><div className="premiumSectionHead"><div><p>Our Services</p><h2>End-to-end IT solutions for a stronger tomorrow.</h2></div><Link href="/services">View All Services <ArrowRight size={16}/></Link></div><div className="premiumServiceGrid">{services.map(({icon:Icon,title,text,href,image})=><article className="premiumServiceCard" key={title}><div className="premiumServicePhoto" style={{backgroundImage:`url(${image})`}}/><div className="premiumServiceBody"><span className="premiumServiceIcon"><Icon/></span><h3>{title}</h3><p>{text}</p><Link href={href}>Learn More <ArrowRight size={14}/></Link></div></article>)}</div></div></section>
+<section className="premiumStory"><div className="premiumStoryShade"/><div className="container premiumStoryGrid"><div><p className="premiumKicker">More than IT services</p><h2>A long-term technology partner.</h2><p>MarimeTech helps organizations leverage technology to operate more efficiently, securely and competitively. We combine real-world experience with practical solutions that create lasting value.</p><Link className="premiumGoldBtn" href="/about">Our Story <ArrowRight size={17}/></Link></div><div className="premiumStoryQuote"><strong>Good technology builds stronger businesses and brighter tomorrows.</strong></div></div></section>
+<section className="premiumWork"><div className="container"><div className="premiumSectionHead"><div><p>Selected Work</p><h2>Real organizations. Real outcomes.</h2></div><Link href="/about">View Our Experience <ArrowRight size={16}/></Link></div><div className="premiumWorkGrid">{work.map(({icon:Icon,title,text})=><article key={title}><Icon/><h3>{title}</h3><p>{text}</p></article>)}</div></div></section>
+<section className="premiumBottomCta"><div className="premiumBottomShade"/><div className="container"><div><p>Let's talk</p><h2>Ready to move your business forward?</h2><span>Let&apos;s discuss how MarimeTech can help.</span></div><Link className="premiumGoldBtn" href="/book-a-call"><CalendarDays size={17}/> Book a Conversation <ArrowRight size={17}/></Link></div></section>
+</main>}
