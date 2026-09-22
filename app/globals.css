@@ -1815,3 +1815,45 @@ body{background:#f6f7f9;color:var(--mt-ink)}
 .premiumDropdownMenu{max-height:min(520px,calc(100vh - 100px));overflow:auto}.premiumDropdownMenu.show{display:grid!important}
 @media (hover:hover) and (min-width:821px){.premiumDropdown:hover .premiumDropdownMenu:not(.show){display:none}}
 @media(max-width:820px){.premiumDropdown{width:100%}.premiumDropdown>button{width:100%;justify-content:space-between;padding:10px 0}.premiumDropdownMenu{width:100%;max-height:330px;overflow:auto;border:0;border-left:2px solid #e9ad35;border-radius:0;background:#f7f9fc}.visualWorkGrid{grid-template-columns:1fr}.pageHero:after{background:linear-gradient(90deg,rgba(3,18,38,.94),rgba(3,18,38,.67))}}
+
+/* Header navigation polish — desktop type harmony + visible mobile hamburger */
+@media (min-width: 821px) {
+  .premiumNavLinks > a,
+  .premiumDropdown > button {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 650;
+    line-height: 1;
+    letter-spacing: 0;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 820px) {
+  .premiumHeader .navToggle {
+    color: var(--mt-navy) !important;
+    background: #f4f7fb;
+    border: 1px solid #dce5ef;
+    border-radius: 9px;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8px;
+  }
+  .premiumHeader .navToggle span {
+    width: 24px;
+    height: 2px;
+    margin: 3px 0;
+    background: var(--mt-navy) !important;
+    border-radius: 99px;
+  }
+  .premiumNavLinks > a,
+  .premiumDropdown > button {
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 650;
+    line-height: 1.25;
+  }
+}
