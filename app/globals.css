@@ -1873,3 +1873,15 @@ body{background:#f6f7f9;color:var(--mt-ink)}
   .premiumHero:after{background:linear-gradient(90deg,rgba(3,19,42,.95),rgba(3,19,42,.74))!important}
 }
 @media(max-width:520px){.premiumHero{background-position:55% center!important}}
+
+/* ===== Final homepage hero contrast pass ===== */
+@media (min-width:821px){
+  .premiumHero .premiumKicker,
+  .premiumHero h1,
+  .premiumHero h1 span{
+    color:var(--mt-gold)!important;
+  }
+  .premiumHero .premiumKicker{opacity:1!important}
+  .premiumHero h1{text-shadow:0 2px 16px rgba(3,19,42,.28)}
+  .premiumHeroCopy>p:not(.premiumKicker){color:#fff!important;text-shadow:0 1px 10px rgba(3,19,42,.65)}
+}
