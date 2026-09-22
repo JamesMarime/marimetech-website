@@ -1,262 +1,51 @@
 import Link from 'next/link';
-import {
-  ArrowRight,
-  CalendarDays,
-  Search,
-  BarChart3,
-  Wrench,
-  TrendingUp,
-  Monitor,
-  Bot,
-  ShieldCheck,
-  CloudCog,
-  Headphones,
-  Users,
-  CheckCircle2,
-  Layers3,
-  BriefcaseBusiness,
-  TimerReset,
-  Server,
-  LockKeyhole,
-} from 'lucide-react';
+import { ArrowRight, CalendarDays, CheckCircle2, Cloud, Headphones, Rocket, ShieldCheck, Sparkles, Users, Server, Globe2, HeartHandshake } from 'lucide-react';
 
-const methodology = [
-  {
-    n: '01',
-    icon: Search,
-    title: 'Find the Friction',
-    text: 'We uncover the hidden constraints slowing your business down.',
-  },
-  {
-    n: '02',
-    icon: BarChart3,
-    title: 'Measure the Impact',
-    text: 'We quantify the cost so you can see exactly what the constraint is costing you.',
-  },
-  {
-    n: '03',
-    icon: Wrench,
-    title: 'Fix What Matters',
-    text: 'We implement the right technology, process or strategy to remove the constraint.',
-  },
-  {
-    n: '04',
-    icon: TrendingUp,
-    title: 'Grow',
-    text: 'With the friction removed, your business operates better, scales faster and grows smarter.',
-  },
+const services = [
+  {icon: Rocket, title:'Launch Your Business', text:'Website, domain, professional email and the essential technology setup to get you started right.', href:'/launch-your-business'},
+  {icon: Headphones, title:'Managed IT & Support', text:'Day-to-day IT management, device and user support, Microsoft 365 and vendor coordination.', href:'/services'},
+  {icon: Cloud, title:'Cloud & Modern Workplace', text:'Cloud migrations, infrastructure modernization and collaboration tools that help you work smarter.', href:'/services'},
+  {icon: ShieldCheck, title:'Cybersecurity & Resilience', text:'Protect your business with stronger security, identity management and disaster recovery.', href:'/services'},
+  {icon: Sparkles, title:'Digital Transformation & AI', text:'Process improvement, automation and AI-enabled solutions for measurable business value.', href:'/services'},
+  {icon: Users, title:'Technology Strategy & Advisory', text:'Fractional CIO/CTO, roadmaps and executive guidance to help you make the right decisions.', href:'/services'},
 ];
 
-const solutions = [
-  {
-    icon: Monitor,
-    title: 'Digital Presence',
-    text: 'Websites and digital experiences that build credibility and turn attention into action.',
-    href: '/launch-your-business',
-  },
-  {
-    icon: Bot,
-    title: 'AI & Automation',
-    text: 'Automate workflows, eliminate manual work and unlock productivity with practical AI.',
-    href: '/services',
-  },
-  {
-    icon: ShieldCheck,
-    title: 'Cybersecurity',
-    text: 'Protect your business, your data and your customers with resilient, layered security.',
-    href: '/services',
-  },
-  {
-    icon: CloudCog,
-    title: 'Technology Transformation',
-    text: 'Modernize systems, migrate to the cloud and build a future-ready technology foundation.',
-    href: '/services',
-  },
-  {
-    icon: Headphones,
-    title: 'IT Support',
-    text: 'Reliable support that keeps your systems running and your team productive.',
-    href: '/services',
-  },
-  {
-    icon: Users,
-    title: 'Tech Consultancy',
-    text: 'Expert guidance to make better technology decisions and invest where it truly matters.',
-    href: '/services',
-  },
-];
-
-const experience = [
-  {
-    icon: Server,
-    tag: 'Infrastructure Transformation',
-    title: 'Data Center Relocation',
-    text: '$10.5M enterprise relocation delivered with minimal business disruption.',
-  },
-  {
-    icon: CloudCog,
-    tag: 'Cloud Transformation',
-    title: 'Azure Migration',
-    text: 'Large-scale cloud migration that reduced downtime and improved operational resilience.',
-  },
-  {
-    icon: LockKeyhole,
-    tag: 'Cyber Resilience',
-    title: 'Ransomware Recovery',
-    text: 'Coordinated recovery and restoration across dozens of affected customer environments.',
-  },
+const work = [
+  {icon: Server, kicker:'Infrastructure Modernization', title:'Enterprise infrastructure, delivered with control.', text:'Data centre relocation, cloud migration and resilient technology foundations for growing organizations.'},
+  {icon: Globe2, kicker:'Digital Presence & Web Platforms', title:'Digital experiences that earn attention and trust.', text:'Modern websites and digital platforms built to tell your story, work beautifully on mobile and support growth.'},
+  {icon: HeartHandshake, kicker:'Mission-Driven Organizations', title:'Technology that helps teams do more good.', text:'Secure, practical modernization for non-profits and community organizations working with real-world constraints.'},
+  {icon: Headphones, kicker:'Growing Businesses', title:'A technology partner as you scale.', text:'Ongoing support, security and strategic guidance without the overhead of building a full internal IT function.'},
 ];
 
 export default function Home() {
-  return (
-    <main id="main" className="referenceHome">
-      <section className="referenceHero">
-        <div className="referenceHeroGlow" aria-hidden="true" />
-        <div className="container referenceHeroGrid">
-          <div className="referenceHeroCopy">
-            <p className="referenceEyebrow">Your business can do more.</p>
-            <h1>
-              We find what&apos;s<br />
-              holding <span>you back.</span>
-            </h1>
-            <p className="referenceHeroLead">
-              We identify the technology, process and operational constraints costing you time,
-              money and growth — and implement solutions that remove them.
-            </p>
-            <div className="referenceHeroActions">
-              <Link className="referenceBtn referenceBtnGold" href="/book-a-call">
-                Book a Free Consultation <ArrowRight size={17} />
-              </Link>
-              <a className="referenceBtn referenceBtnOutline" href="#solutions">
-                Explore Our Services <ArrowRight size={17} />
-              </a>
-            </div>
-            <a className="referenceTextAction" href="#methodology">
-              <span className="referencePlay">▶</span>
-              See how we help businesses grow
-            </a>
-          </div>
-
-          <div className="referenceHeroVisual" aria-label="MarimeTech leadership">
-            <div className="referencePortrait" />
-            <div className="referencePortraitShade" aria-hidden="true" />
-            <div className="referenceHeroLogoChip">
-              <img src="/marimetech-icon.png" alt="" aria-hidden="true" />
-            </div>
-          </div>
+  return <main id="main" className="mtHome">
+    <section className="mtHero">
+      <div className="mtHeroPhoto" aria-hidden="true" />
+      <div className="container mtHeroInner">
+        <div className="mtHeroCopy">
+          <p className="mtKicker">Technology transformation for growing organizations</p>
+          <h1>Technology that<br/>moves you <span>forward.</span></h1>
+          <p className="mtHeroLead">Practical, secure and scalable solutions to help you start, grow and build a stronger tomorrow.</p>
+          <div className="mtActions"><Link href="/book-a-call" className="mtBtn mtBtnPrimary">Book a Conversation <ArrowRight size={17}/></Link><a href="#services" className="mtBtn mtBtnGhost">Explore Our Services</a></div>
         </div>
+      </div>
+      <div className="container mtTrustStrip"><span><CheckCircle2/> Trusted partner for growing businesses</span><span><ShieldCheck/> Secure, reliable and future-ready</span><span><Sparkles/> From ideas to real impact</span></div>
+    </section>
 
-        <div className="container referenceStatsWrap">
-          <div className="referenceStats">
-            <div className="referenceStat">
-              <TrendingUp />
-              <strong>75+</strong>
-              <span>Projects Delivered</span>
-            </div>
-            <div className="referenceStat">
-              <BriefcaseBusiness />
-              <strong>15+</strong>
-              <span>Years of Experience</span>
-            </div>
-            <div className="referenceStat">
-              <Layers3 />
-              <strong>End-to-End</strong>
-              <span>Strategy to Execution</span>
-            </div>
-            <div className="referenceStat">
-              <CheckCircle2 />
-              <strong>Business-First</strong>
-              <span>Problem Before Tool</span>
-            </div>
-          </div>
-        </div>
-      </section>
+    <section className="mtSection" id="services"><div className="container">
+      <div className="mtSectionHead"><div><p className="mtKicker">Our services</p><h2>Complete technology support.<br/>At every stage of your journey.</h2></div><p>Whether you’re launching a new business, modernizing your infrastructure or looking for a long-term technology partner, MarimeTech delivers practical, secure and scalable solutions.</p></div>
+      <div className="mtServiceGrid">{services.map(({icon:Icon,title,text,href})=><article className="mtServiceCard" key={title}><div className="mtServiceIcon"><Icon/></div><h3>{title}</h3><p>{text}</p><Link href={href}>Learn more <ArrowRight size={14}/></Link></article>)}</div>
+    </div></section>
 
-      <section className="referenceMethod" id="methodology">
-        <div className="container">
-          <div className="referenceSectionHeading referenceSectionHeadingDark">
-            <p>Our Methodology</p>
-            <h2>From Friction to Growth.</h2>
-          </div>
-          <div className="referenceMethodGrid">
-            {methodology.map(({ n, icon: Icon, title, text }, index) => (
-              <article className="referenceMethodStep" key={n}>
-                <span className="referenceMethodNumber">{n}</span>
-                <div className="referenceMethodIcon"><Icon /></div>
-                {index < methodology.length - 1 && <div className="referenceMethodArrow">→</div>}
-                <h3>{title}</h3>
-                <p>{text}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+    <section className="mtPartner"><div className="container mtPartnerGrid">
+      <div className="mtPartnerCopy"><p className="mtKicker">About MarimeTech</p><h2>More than IT services.<br/>A long-term partner.</h2><p>We help organizations leverage technology to operate more efficiently, securely and competitively. We combine real-world experience with practical solutions designed to create lasting value.</p><Link href="/about" className="mtBtn mtBtnPrimary">Our Story <ArrowRight size={16}/></Link><div className="mtNumbers"><div><strong>15+</strong><span>Years experience</span></div><div><strong>75+</strong><span>Projects delivered</span></div><div><strong>End-to-end</strong><span>Strategy to execution</span></div></div></div>
+      <div className="mtPartnerVisual"><img src="/marimetech-capabilities.webp" alt="MarimeTech technology capabilities: strategy, transformation, data and AI, growth, security and operations"/></div>
+    </div></section>
 
-      <section className="referenceSolutions" id="solutions">
-        <div className="container">
-          <div className="referenceSectionHeading">
-            <p>Solutions That Drive Results</p>
-            <h2>The Right Solutions. The Right Impact.</h2>
-          </div>
-          <div className="referenceSolutionsGrid">
-            {solutions.map(({ icon: Icon, title, text, href }) => (
-              <article className="referenceSolutionCard" key={title}>
-                <div className="referenceSolutionIcon"><Icon /></div>
-                <h3>{title}</h3>
-                <p>{text}</p>
-                <Link href={href}>Learn more <ArrowRight size={14} /></Link>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+    <section className="mtSection mtWork"><div className="container"><div className="mtSectionHead mtWorkHead"><div><p className="mtKicker">Selected work</p><h2>Real organizations. Real outcomes.</h2></div><Link href="/about">See our experience <ArrowRight size={14}/></Link></div><div className="mtWorkGrid">{work.map(({icon:Icon,kicker,title,text})=><article className="mtWorkCard" key={kicker}><div className="mtWorkImage"><Icon/></div><p className="mtWorkKicker">{kicker}</p><h3>{title}</h3><p>{text}</p></article>)}</div></div></section>
 
-      <section className="referenceWork" id="experience">
-        <div className="container">
-          <div className="referenceWorkHeading">
-            <div>
-              <p>Real Problems. Real Results.</p>
-              <h2>Experience That Makes a Difference.</h2>
-            </div>
-            <Link className="referenceBtn referenceBtnOutline referenceSmallBtn" href="/about">
-              See Our Experience <ArrowRight size={15} />
-            </Link>
-          </div>
-          <div className="referenceWorkGrid">
-            {experience.map(({ icon: Icon, tag, title, text }, index) => (
-              <article className={`referenceWorkCard referenceWorkCard${index + 1}`} key={title}>
-                <div className="referenceWorkOverlay" />
-                <div className="referenceWorkContent">
-                  <span className="referenceWorkTag">{tag}</span>
-                  <Icon className="referenceWorkIcon" />
-                  <h3>{title}</h3>
-                  <p>{text}</p>
-                  <Link href="/about">Learn more <ArrowRight size={14} /></Link>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+    <section className="mtQuote"><div className="container"><blockquote>“Practical technology. Clear decisions. A partner focused on what your organization actually needs.”</blockquote></div></section>
 
-      <section className="referenceCta">
-        <div className="container referenceCtaGrid">
-          <div>
-            <h2>Ready to remove what&apos;s<br />holding your business <span>back?</span></h2>
-            <p>Let&apos;s find the friction and unlock your next level of growth.</p>
-          </div>
-          <div className="referenceCtaAction">
-            <Link className="referenceBtn referenceBtnGold referenceCtaButton" href="/book-a-call">
-              <CalendarDays size={17} /> Book a Free Consultation <ArrowRight size={17} />
-            </Link>
-            <div className="referenceCtaTrust">
-              <span><CheckCircle2 /> No obligation</span>
-              <span><CheckCircle2 /> Expert advice</span>
-              <span><CheckCircle2 /> Clear next steps</span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-  );
+    <section className="mtFinalCta"><div className="container mtFinalInner"><div><p className="mtKicker mtKickerLight">Let’s talk</p><h2>A better, more capable tomorrow<br/>starts with a conversation.</h2></div><div><Link href="/book-a-call" className="mtBtn mtBtnLight"><CalendarDays size={17}/> Book a Conversation <ArrowRight size={17}/></Link><p>No pressure. Just a conversation about your goals.</p></div></div></section>
+  </main>
 }

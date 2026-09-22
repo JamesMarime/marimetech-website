@@ -1,40 +1,5 @@
 'use client';
-
 import Link from 'next/link';
 import { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
-
-const links = [
-  ['/', 'Home'],
-  ['/about', 'About'],
-  ['/services', 'Services'],
-  ['/#experience', 'Our Work'],
-  ['/insights', 'Resources'],
-];
-
-export default function Header() {
-  const [open, setOpen] = useState(false);
-  return (
-    <>
-      <a className="skip" href="#main">Skip to content</a>
-      <header className="header referenceHeader">
-        <div className="container navbar referenceNavbar">
-          <Link href="/" className="referenceBrand" aria-label="MarimeTech Solutions Inc. home">
-            <img src="/marimetech-header-logo.png" alt="MarimeTech Solutions Inc." />
-          </Link>
-          <button className="navToggle" aria-expanded={open} aria-label="Toggle navigation" onClick={() => setOpen(!open)}>
-            <span></span><span></span><span></span>
-          </button>
-          <nav className={`navLinks referenceNavLinks ${open ? 'open' : ''}`} aria-label="Primary navigation">
-            {links.map(([href, label]) => (
-              <Link key={href} href={href} onClick={() => setOpen(false)}>{label}</Link>
-            ))}
-            <Link className="referenceNavCta" href="/book-a-call" onClick={() => setOpen(false)}>
-              Book a Call <ArrowRight size={15} />
-            </Link>
-          </nav>
-        </div>
-      </header>
-    </>
-  );
-}
+import { ArrowRight, ChevronDown } from 'lucide-react';
+export default function Header(){const[open,setOpen]=useState(false);return <><a className="skip" href="#main">Skip to content</a><header className="header mtHeader"><div className="container mtNav"><Link href="/" className="mtBrand" aria-label="MarimeTech Solutions Inc. home"><img src="/marimetech-header-logo.png" alt="MarimeTech Solutions Inc."/></Link><button className={`mtMenu ${open?'active':''}`} aria-expanded={open} aria-label="Toggle navigation" onClick={()=>setOpen(!open)}><span/><span/><span/></button><nav className={`mtNavLinks ${open?'open':''}`}><Link href="/" onClick={()=>setOpen(false)}>Home</Link><div className="mtServicesNav"><Link href="/services" onClick={()=>setOpen(false)}>Services <ChevronDown size={14}/></Link><div className="mtDropdown"><Link href="/launch-your-business">Launch Your Business</Link><Link href="/services">Managed IT & Support</Link><Link href="/services">Cloud & Modern Workplace</Link><Link href="/services">Cybersecurity & Resilience</Link><Link href="/services">Digital Transformation & AI</Link><Link href="/services">Technology Strategy & Advisory</Link></div></div><Link href="/#services" onClick={()=>setOpen(false)}>Our Work</Link><Link href="/about" onClick={()=>setOpen(false)}>About</Link><Link href="/insights" onClick={()=>setOpen(false)}>Insights</Link><Link href="/contact" onClick={()=>setOpen(false)}>Contact</Link><Link className="mtNavCta" href="/book-a-call" onClick={()=>setOpen(false)}>Book a Conversation <ArrowRight size={15}/></Link></nav></div></header></>}
