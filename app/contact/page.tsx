@@ -7,7 +7,7 @@ export default function ContactPage() {
 
   return (
     <main id="main">
-      <section className="pageHero"><div className="container"><p className="eyebrow">Contact</p><h1>Let us talk about what is slowing the business down.</h1><p>Tell us what is happening, what you have already tried and what success needs to look like.</p></div></section>
+      <section className="pageHero pageHeroContact"><div className="container"><p className="eyebrow">Contact</p><h1>Let us talk about what your business needs next.</h1><p>Tell us what is happening, what you have already tried and what success needs to look like.</p></div></section>
       <section className="section soft">
         <div className="container contactGrid">
           <aside className="contactPanel">

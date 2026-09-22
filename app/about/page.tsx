@@ -10,13 +10,12 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main id="main">
-      <section className="pageHero">
+      <section className="pageHero pageHeroAbout">
         <div className="container">
           <p className="eyebrow">About Us</p>
           <h1>About MarimeTech Solutions Inc.</h1>
           <p>
-            MarimeTech Solutions Inc. helps organizations identify and remove business
-            bottlenecks through secure technology transformation.
+            MarimeTech Solutions Inc. helps organizations build stronger, more secure and scalable technology foundations.
           </p>
         </div>
       </section>
@@ -40,8 +39,7 @@ export default function AboutPage() {
           <div className="card">
             <h3>Our mission</h3>
             <p>
-              To help organizations remove the bottlenecks that limit performance and
-              build stronger foundations for sustainable growth.
+              To help organizations build practical technology foundations that support sustainable growth.
             </p>
             <h3 style={{marginTop: 28}}>Our promise</h3>
             <p>

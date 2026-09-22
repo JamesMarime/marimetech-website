@@ -6,7 +6,7 @@ export const metadata: Metadata = { title: 'Leadership grounded in delivery, not
 export default function Page() {
   return (
     <main id="main">
-      <section className="pageHero"><div className="container"><p className="eyebrow">MarimeTech Solutions</p><h1>Leadership grounded in delivery, not theory.</h1><p>James Marime founded MarimeTech Solutions to help organizations make better technology decisions and execute transformation with clarity.</p></div></section>
+      <section className="pageHero pageHeroFounder"><div className="container"><p className="eyebrow">MarimeTech Solutions</p><h1>Leadership grounded in delivery, not theory.</h1><p>James Marime founded MarimeTech Solutions to help organizations make better technology decisions and execute transformation with clarity.</p></div></section>
       
       <section className="section">
         <div className="container founderCard">

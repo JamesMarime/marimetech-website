@@ -6,7 +6,7 @@ export const metadata: Metadata = { title: 'Books and resources' };
 export default function Page() {
   return (
     <main id="main">
-      <section className="pageHero"><div className="container"><p className="eyebrow">MarimeTech Solutions</p><h1>Books and resources</h1><p>Stories, lessons and practical resources from James Marime on money, faith, leadership, entrepreneurship and becoming.</p></div></section>
+      <section className="pageHero pageHeroInsights"><div className="container"><p className="eyebrow">MarimeTech Solutions</p><h1>Books and resources</h1><p>Stories, lessons and practical resources from James Marime on money, faith, leadership, entrepreneurship and becoming.</p></div></section>
       
       <section className="section">
         <div className="container grid2">

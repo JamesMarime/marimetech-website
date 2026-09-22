@@ -6,7 +6,7 @@ export const metadata: Metadata = { title: 'The Becoming Sessions' };
 export default function Page() {
   return (
     <main id="main">
-      <section className="pageHero"><div className="container"><p className="eyebrow">MarimeTech Solutions</p><h1>The Becoming Sessions</h1><p>Faith, resilience, purpose and the honest journey of becoming. A podcast hosted by James and Joanne Marime.</p></div></section>
+      <section className="pageHero pageHeroInsights"><div className="container"><p className="eyebrow">MarimeTech Solutions</p><h1>The Becoming Sessions</h1><p>Faith, resilience, purpose and the honest journey of becoming. A podcast hosted by James and Joanne Marime.</p></div></section>
       
       <section className="section">
         <div className="container split">

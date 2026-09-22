@@ -6,7 +6,7 @@ export const metadata: Metadata = { title: 'Technology services built around bus
 export default function Page() {
   return (
     <main id="main">
-      <section className="pageHero"><div className="container"><p className="eyebrow">MarimeTech Solutions</p><h1>Technology services built around business outcomes.</h1><p>From strategy and modernization to cybersecurity and executive advisory, every engagement begins with the constraint that matters most.</p></div></section>
+      <section className="pageHero pageHeroServices"><div className="container"><p className="eyebrow">MarimeTech Solutions</p><h1>Technology services built around business outcomes.</h1><p>From strategy and modernization to cybersecurity and executive advisory, every engagement begins with the constraint that matters most.</p></div></section>
       
       <section className="section">
         <div className="container">
@@ -20,7 +20,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section className="section soft"><div className="container band"><div><p className="eyebrow">Not sure where to begin?</p><h2 style={{marginBottom:12}}>Start with the bottleneck.</h2><p>We will help you diagnose what is slowing performance and identify the most sensible next step.</p></div><Link className="btn btnPrimary" href="/contact">Discuss your challenge</Link></div></section>
+      <section className="section soft"><div className="container band"><div><p className="eyebrow">Not sure where to begin?</p><h2 style={{marginBottom:12}}>Start with the business priority.</h2><p>We will help you understand what matters most and identify the most sensible next step.</p></div><Link className="btn btnPrimary" href="/contact">Discuss your challenge</Link></div></section>
 
     </main>
   );
