@@ -19,7 +19,7 @@ export default function Header(){
   },[]);
   const nav=(href:string,label:string)=><Link href={href} onClick={closeAll}>{label}</Link>;
   return <><a className="skip" href="#main">Skip to content</a><header className="premiumHeader"><div className="container premiumNav">
-    <Link href="/" className="premiumBrand" aria-label="MarimeTech Solutions Inc. home" onClick={closeAll}><img src="/marimetech-logo-2.png" alt="MarimeTech Solutions Inc."/></Link>
+    <Link href="/" className="premiumBrand" aria-label="MarimeTech Solutions Inc. home" onClick={closeAll}><img src="/marimetech-logo.png" alt="MarimeTech Solutions Inc."/></Link>
     <button className="navToggle" aria-expanded={open} aria-label="Toggle navigation" onClick={()=>{setOpen(!open);setServices(false)}}><span/><span/><span/></button>
     <nav className={`premiumNavLinks ${open?'open':''}`}>
       {nav('/','Home')}

@@ -6,15 +6,15 @@ export default function Footer() {
     <footer className="footer referenceFooter">
       <div className="container referenceFooterGrid">
         <div className="referenceFooterBrand">
-          <img src="/marimetech-header-logo.png" alt="MarimeTech Solutions Inc." />
+          <img src="/marimetech-logo.png" alt="MarimeTech Solutions Inc." />
           <p>Innovate. Automate. Grow.</p>
-          <small>Technology should solve the constraint — not become another one.</small>
+          <small>Practical technology. Real progress. A brighter tomorrow.</small>
         </div>
         <div>
           <h3>Company</h3>
           <ul>
             <li><Link href="/about">About</Link></li>
-            <li><Link href="/#experience">Our Work</Link></li>
+            <li><Link href="/our-work">Our Work</Link></li>
             <li><Link href="/contact">Contact</Link></li>
           </ul>
         </div>
